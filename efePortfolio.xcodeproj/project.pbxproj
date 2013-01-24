@@ -28,6 +28,9 @@
 		BD4FC2C016B17BF200EB70BD /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC2BF16B17BF200EB70BD /* Default-Landscape~ipad.png */; };
 		BD4FC2C216B182B000EB70BD /* test72.png in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC2C116B182B000EB70BD /* test72.png */; };
 		BD8EE4E816B1837300706EC9 /* Infos in Resources */ = {isa = PBXBuildFile; fileRef = BD8EE4E716B1837300706EC9 /* Infos */; };
+		BDEACDBE16B189FD007FCF96 /* FioritoAttractor.mm in Sources */ = {isa = PBXBuildFile; fileRef = BDEACDBC16B189FD007FCF96 /* FioritoAttractor.mm */; };
+		BDEACDC316B18A97007FCF96 /* Attractor.mm in Sources */ = {isa = PBXBuildFile; fileRef = BDEACDC116B18A97007FCF96 /* Attractor.mm */; };
+		BDEACDC616B18D00007FCF96 /* FioritoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BDEACDC516B18D00007FCF96 /* FioritoViewController.mm */; };
 		E41D400B13B39D2100A75A5D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41D400613B39D2100A75A5D /* AVFoundation.framework */; };
 		E41D400C13B39D2100A75A5D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41D400713B39D2100A75A5D /* CoreMedia.framework */; };
 		E41D400D13B39D2100A75A5D /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41D400813B39D2100A75A5D /* CoreVideo.framework */; };
@@ -82,6 +85,13 @@
 		BD4FC2BF16B17BF200EB70BD /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		BD4FC2C116B182B000EB70BD /* test72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test72.png; sourceTree = "<group>"; };
 		BD8EE4E716B1837300706EC9 /* Infos */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Infos; sourceTree = "<group>"; };
+		BDEACDBC16B189FD007FCF96 /* FioritoAttractor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FioritoAttractor.mm; sourceTree = "<group>"; };
+		BDEACDBD16B189FD007FCF96 /* FioritoAttractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FioritoAttractor.h; sourceTree = "<group>"; };
+		BDEACDC016B18A97007FCF96 /* Attractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attractor.h; sourceTree = "<group>"; };
+		BDEACDC116B18A97007FCF96 /* Attractor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Attractor.mm; sourceTree = "<group>"; };
+		BDEACDC216B18A97007FCF96 /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
+		BDEACDC416B18D00007FCF96 /* FioritoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FioritoViewController.h; sourceTree = "<group>"; };
+		BDEACDC516B18D00007FCF96 /* FioritoViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FioritoViewController.mm; sourceTree = "<group>"; };
 		E41D3ED613B38FB500A75A5D /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
 		E41D3EE513B3906D00A75A5D /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/ios/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
 		E41D400613B39D2100A75A5D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -215,6 +225,20 @@
 			name = viewcontrollers;
 			sourceTree = "<group>";
 		};
+		BDEACDBF16B18A74007FCF96 /* fioritoApp */ = {
+			isa = PBXGroup;
+			children = (
+				BDEACDBC16B189FD007FCF96 /* FioritoAttractor.mm */,
+				BDEACDBD16B189FD007FCF96 /* FioritoAttractor.h */,
+				BDEACDC416B18D00007FCF96 /* FioritoViewController.h */,
+				BDEACDC516B18D00007FCF96 /* FioritoViewController.mm */,
+				BDEACDC016B18A97007FCF96 /* Attractor.h */,
+				BDEACDC116B18A97007FCF96 /* Attractor.mm */,
+				BDEACDC216B18A97007FCF96 /* Particle.h */,
+			);
+			name = fioritoApp;
+			sourceTree = "<group>";
+		};
 		E41D40FE13B3A0D800A75A5D /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +265,7 @@
 		d1cfea8461b96256b1b8c57d5973712c /* openFrameworks Apps */ = {
 			isa = PBXGroup;
 			children = (
+				BDEACDBF16B18A74007FCF96 /* fioritoApp */,
 				914F466816AC3E2700786D52 /* ExampleOFApp.h */,
 				914F466916AC3E2700786D52 /* ExampleOFApp.mm */,
 				914F466A16AC3E2700786D52 /* ExampleOFAppViewController.h */,
@@ -373,6 +398,9 @@
 				914F466C16AC3E2700786D52 /* ExampleOFApp.mm in Sources */,
 				914F466D16AC3E2700786D52 /* ExampleOFAppViewController.mm in Sources */,
 				914F467A16AC417600786D52 /* LaunchAppViewController.mm in Sources */,
+				BDEACDBE16B189FD007FCF96 /* FioritoAttractor.mm in Sources */,
+				BDEACDC316B18A97007FCF96 /* Attractor.mm in Sources */,
+				BDEACDC616B18D00007FCF96 /* FioritoViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
