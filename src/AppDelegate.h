@@ -1,5 +1,7 @@
 #import "ofxiPhoneAppDelegate.h"
 
-@interface AppDelegate : ofxiPhoneAppDelegate
+@interface AppDelegate : ofxiPhoneAppDelegate{
+    
+}
 
 @end
