@@ -23,11 +23,11 @@
     // orientation
     CGRect mainScreenFrame = [[UIScreen mainScreen] bounds];
     CGRect frame = mainScreenFrame;
-    if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
-        self.interfaceOrientation == UIInterfaceOrientationLandscapeRight) {
-        frame.size.width = mainScreenFrame.size.height;
-        frame.size.height = mainScreenFrame.size.width;
-    }
+//    if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
+//        self.interfaceOrientation == UIInterfaceOrientationLandscapeRight) {
+//        frame.size.width = mainScreenFrame.size.height;
+//        frame.size.height = mainScreenFrame.size.width;
+//    }
     
     // create the app
     ExampleOFAppViewController *exampleOFAppViewController = [[ExampleOFAppViewController alloc] initWithFrame:frame app:exampleOFApp];

@@ -25,8 +25,8 @@ void ExampleOFApp::update(){
 
 //--------------------------------------------------------------
 void ExampleOFApp::draw() {
-    int x = ofGetWidth()  * 0.5;
-    int y = ofGetHeight() * 0.5;
+    int x = ofGetHeight()  * 0.5;
+    int y = ofGetWidth() * 0.5;
     int r = MIN(ofGetWidth(), ofGetHeight()) * 0.3;
     
 	ofSetColor(ofColor::red);
