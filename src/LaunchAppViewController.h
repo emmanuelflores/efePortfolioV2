@@ -4,7 +4,7 @@
     
 }
 
-// IB
-- (IBAction)launchAppPressed:(id)sender;
+-(IBAction)launchAppPressed:(id)sender;
+-(IBAction)launchFioritoAttractor:(id)sender;
 
 @end

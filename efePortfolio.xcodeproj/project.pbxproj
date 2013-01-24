@@ -15,14 +15,22 @@
 		914F466616AC3E1C00786D52 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 914F466316AC3E1C00786D52 /* AppDelegate.mm */; };
 		914F466C16AC3E2700786D52 /* ExampleOFApp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 914F466916AC3E2700786D52 /* ExampleOFApp.mm */; };
 		914F466D16AC3E2700786D52 /* ExampleOFAppViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 914F466B16AC3E2700786D52 /* ExampleOFAppViewController.mm */; };
-		914F467716AC3FA900786D52 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 914F467616AC3FA900786D52 /* Storyboard.storyboard */; };
 		914F467A16AC417600786D52 /* LaunchAppViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 914F467916AC417600786D52 /* LaunchAppViewController.mm */; };
 		BB16EBD20F2B2A9500518274 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB16EBD10F2B2A9500518274 /* OpenGLES.framework */; };
 		BB16EBD90F2B2AB500518274 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB16EBD80F2B2AB500518274 /* QuartzCore.framework */; };
 		BBE5EAB80F49AD8400F28951 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBE5EAB70F49AD8400F28951 /* AudioToolbox.framework */; };
 		BD110ACB16B16BD8001F2642 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD110ACA16B16BD8001F2642 /* Default-568h@2x.png */; };
-		BD110ACD16B16C15001F2642 /* monotoneIcon57.png in Resources */ = {isa = PBXBuildFile; fileRef = BD110ACC16B16C15001F2642 /* monotoneIcon57.png */; };
 		BD4FC28316B1718900EB70BD /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC28216B1718900EB70BD /* iPadStoryboard.storyboard */; };
+		BD4FC2B816B17AC100EB70BD /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC2B716B17AC100EB70BD /* splash.png */; };
+		BD4FC2BA16B17AD100EB70BD /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC2B916B17AD100EB70BD /* Default-Portrait@2x~ipad.png */; };
+		BD4FC2BC16B17AD500EB70BD /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC2BB16B17AD500EB70BD /* Default-Portrait~ipad.png */; };
+		BD4FC2BE16B17BEE00EB70BD /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC2BD16B17BEE00EB70BD /* Default-Landscape@2x~ipad.png */; };
+		BD4FC2C016B17BF200EB70BD /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC2BF16B17BF200EB70BD /* Default-Landscape~ipad.png */; };
+		BD4FC2C216B182B000EB70BD /* test72.png in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC2C116B182B000EB70BD /* test72.png */; };
+		BD8EE4E816B1837300706EC9 /* Infos in Resources */ = {isa = PBXBuildFile; fileRef = BD8EE4E716B1837300706EC9 /* Infos */; };
+		BDEACDBE16B189FD007FCF96 /* FioritoAttractor.mm in Sources */ = {isa = PBXBuildFile; fileRef = BDEACDBC16B189FD007FCF96 /* FioritoAttractor.mm */; };
+		BDEACDC316B18A97007FCF96 /* Attractor.mm in Sources */ = {isa = PBXBuildFile; fileRef = BDEACDC116B18A97007FCF96 /* Attractor.mm */; };
+		BDEACDC616B18D00007FCF96 /* FioritoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BDEACDC516B18D00007FCF96 /* FioritoViewController.mm */; };
 		E41D400B13B39D2100A75A5D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41D400613B39D2100A75A5D /* AVFoundation.framework */; };
 		E41D400C13B39D2100A75A5D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41D400713B39D2100A75A5D /* CoreMedia.framework */; };
 		E41D400D13B39D2100A75A5D /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41D400813B39D2100A75A5D /* CoreVideo.framework */; };
@@ -62,7 +70,6 @@
 		914F466916AC3E2700786D52 /* ExampleOFApp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ExampleOFApp.mm; sourceTree = "<group>"; };
 		914F466A16AC3E2700786D52 /* ExampleOFAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleOFAppViewController.h; sourceTree = "<group>"; };
 		914F466B16AC3E2700786D52 /* ExampleOFAppViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ExampleOFAppViewController.mm; sourceTree = "<group>"; };
-		914F467616AC3FA900786D52 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = SOURCE_ROOT; };
 		914F467816AC417600786D52 /* LaunchAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAppViewController.h; sourceTree = "<group>"; };
 		914F467916AC417600786D52 /* LaunchAppViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LaunchAppViewController.mm; sourceTree = "<group>"; };
 		BB16EBD10F2B2A9500518274 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -70,8 +77,21 @@
 		BB24DDC910DA781C00E9C588 /* ofxiphone-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ofxiphone-Info.plist"; sourceTree = "<group>"; };
 		BBE5EAB70F49AD8400F28951 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		BD110ACA16B16BD8001F2642 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		BD110ACC16B16C15001F2642 /* monotoneIcon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monotoneIcon57.png; sourceTree = "<group>"; };
 		BD4FC28216B1718900EB70BD /* iPadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPadStoryboard.storyboard; sourceTree = "<group>"; };
+		BD4FC2B716B17AC100EB70BD /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
+		BD4FC2B916B17AD100EB70BD /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		BD4FC2BB16B17AD500EB70BD /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		BD4FC2BD16B17BEE00EB70BD /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		BD4FC2BF16B17BF200EB70BD /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		BD4FC2C116B182B000EB70BD /* test72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test72.png; sourceTree = "<group>"; };
+		BD8EE4E716B1837300706EC9 /* Infos */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Infos; sourceTree = "<group>"; };
+		BDEACDBC16B189FD007FCF96 /* FioritoAttractor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FioritoAttractor.mm; sourceTree = "<group>"; };
+		BDEACDBD16B189FD007FCF96 /* FioritoAttractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FioritoAttractor.h; sourceTree = "<group>"; };
+		BDEACDC016B18A97007FCF96 /* Attractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attractor.h; sourceTree = "<group>"; };
+		BDEACDC116B18A97007FCF96 /* Attractor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Attractor.mm; sourceTree = "<group>"; };
+		BDEACDC216B18A97007FCF96 /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
+		BDEACDC416B18D00007FCF96 /* FioritoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FioritoViewController.h; sourceTree = "<group>"; };
+		BDEACDC516B18D00007FCF96 /* FioritoViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FioritoViewController.mm; sourceTree = "<group>"; };
 		E41D3ED613B38FB500A75A5D /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
 		E41D3EE513B3906D00A75A5D /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/ios/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
 		E41D400613B39D2100A75A5D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -186,8 +206,14 @@
 		BD4FC28116B1716000EB70BD /* artwork */ = {
 			isa = PBXGroup;
 			children = (
+				BD4FC2BF16B17BF200EB70BD /* Default-Landscape~ipad.png */,
+				BD4FC2BD16B17BEE00EB70BD /* Default-Landscape@2x~ipad.png */,
+				BD4FC2BB16B17AD500EB70BD /* Default-Portrait~ipad.png */,
+				BD4FC2B916B17AD100EB70BD /* Default-Portrait@2x~ipad.png */,
+				BD4FC2B716B17AC100EB70BD /* splash.png */,
 				BD110ACA16B16BD8001F2642 /* Default-568h@2x.png */,
-				BD110ACC16B16C15001F2642 /* monotoneIcon57.png */,
+				BD4FC2C116B182B000EB70BD /* test72.png */,
+				BD8EE4E716B1837300706EC9 /* Infos */,
 			);
 			name = artwork;
 			sourceTree = "<group>";
@@ -197,6 +223,20 @@
 			children = (
 			);
 			name = viewcontrollers;
+			sourceTree = "<group>";
+		};
+		BDEACDBF16B18A74007FCF96 /* fioritoApp */ = {
+			isa = PBXGroup;
+			children = (
+				BDEACDBC16B189FD007FCF96 /* FioritoAttractor.mm */,
+				BDEACDBD16B189FD007FCF96 /* FioritoAttractor.h */,
+				BDEACDC416B18D00007FCF96 /* FioritoViewController.h */,
+				BDEACDC516B18D00007FCF96 /* FioritoViewController.mm */,
+				BDEACDC016B18A97007FCF96 /* Attractor.h */,
+				BDEACDC116B18A97007FCF96 /* Attractor.mm */,
+				BDEACDC216B18A97007FCF96 /* Particle.h */,
+			);
+			name = fioritoApp;
 			sourceTree = "<group>";
 		};
 		E41D40FE13B3A0D800A75A5D /* Products */ = {
@@ -212,7 +252,6 @@
 			children = (
 				BD4FC28416B175AB00EB70BD /* viewcontrollers */,
 				E4D8936B11527B74007E1F53 /* main.mm */,
-				914F467616AC3FA900786D52 /* Storyboard.storyboard */,
 				BD4FC28216B1718900EB70BD /* iPadStoryboard.storyboard */,
 				914F466216AC3E1C00786D52 /* AppDelegate.h */,
 				914F466316AC3E1C00786D52 /* AppDelegate.mm */,
@@ -226,6 +265,7 @@
 		d1cfea8461b96256b1b8c57d5973712c /* openFrameworks Apps */ = {
 			isa = PBXGroup;
 			children = (
+				BDEACDBF16B18A74007FCF96 /* fioritoApp */,
 				914F466816AC3E2700786D52 /* ExampleOFApp.h */,
 				914F466916AC3E2700786D52 /* ExampleOFApp.mm */,
 				914F466A16AC3E2700786D52 /* ExampleOFAppViewController.h */,
@@ -305,10 +345,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				914F467716AC3FA900786D52 /* Storyboard.storyboard in Resources */,
 				BD110ACB16B16BD8001F2642 /* Default-568h@2x.png in Resources */,
-				BD110ACD16B16C15001F2642 /* monotoneIcon57.png in Resources */,
 				BD4FC28316B1718900EB70BD /* iPadStoryboard.storyboard in Resources */,
+				BD4FC2B816B17AC100EB70BD /* splash.png in Resources */,
+				BD4FC2BA16B17AD100EB70BD /* Default-Portrait@2x~ipad.png in Resources */,
+				BD4FC2BC16B17AD500EB70BD /* Default-Portrait~ipad.png in Resources */,
+				BD4FC2BE16B17BEE00EB70BD /* Default-Landscape@2x~ipad.png in Resources */,
+				BD4FC2C016B17BF200EB70BD /* Default-Landscape~ipad.png in Resources */,
+				BD4FC2C216B182B000EB70BD /* test72.png in Resources */,
+				BD8EE4E816B1837300706EC9 /* Infos in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +398,9 @@
 				914F466C16AC3E2700786D52 /* ExampleOFApp.mm in Sources */,
 				914F466D16AC3E2700786D52 /* ExampleOFAppViewController.mm in Sources */,
 				914F467A16AC417600786D52 /* LaunchAppViewController.mm in Sources */,
+				BDEACDBE16B189FD007FCF96 /* FioritoAttractor.mm in Sources */,
+				BDEACDC316B18A97007FCF96 /* Attractor.mm in Sources */,
+				BDEACDC616B18D00007FCF96 /* FioritoViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

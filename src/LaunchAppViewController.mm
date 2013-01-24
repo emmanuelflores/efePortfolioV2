@@ -1,6 +1,8 @@
 #import "LaunchAppViewController.h"
 #import "ExampleOFAppViewController.h"
 #import "ExampleOFApp.h"
+#import "FioritoViewController.h"
+#import "FioritoAttractor.h"
 
 @interface LaunchAppViewController () {}
 
@@ -35,7 +37,28 @@
     [self.navigationController pushViewController:exampleOFAppViewController animated:YES];
 }
 
+-(void)launchFioritoAttractor:(id)sender{
+    FioritoAttractor *fioritoApp = new FioritoAttractor();
+    
+    CGRect mainScreenFrame = [[UIScreen mainScreen]bounds];
+    CGRect frame = mainScreenFrame;
+    
+    //create the app
+    FioritoViewController *fvc = [[FioritoViewController alloc]initWithFrame:frame app:fioritoApp];
+    //add it
+    [self.navigationController pushViewController:fvc animated:YES];
+}
+
 #pragma mark - Life Cycle
+
+-(id)init{
+    self = [super init];
+    if(self){
+        
+    }
+    
+    return self;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

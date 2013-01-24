@@ -1,5 +1,7 @@
 #import "ofxiPhoneViewController.h"
 
-@interface ExampleOFAppViewController : ofxiPhoneViewController
+@interface ExampleOFAppViewController : ofxiPhoneViewController{
+    
+}
 
 @end
