@@ -39,6 +39,8 @@
 		E42EC43816B19ADB003AE0C3 /* PortifolioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42EC43616B19ADB003AE0C3 /* PortifolioViewController.m */; };
 		E42EC43916B19ADB003AE0C3 /* PortifolioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E42EC43716B19ADB003AE0C3 /* PortifolioViewController.xib */; };
 		E42EC43C16B19B0D003AE0C3 /* PortifolioRowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42EC43B16B19B0D003AE0C3 /* PortifolioRowViewController.m */; };
+		E45576F216B2B2AF00A76B32 /* CasperTestDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = E45576F116B2B2AF00A76B32 /* CasperTestDataClass.m */; };
+		E45576F516B2B37200A76B32 /* CasperStore.m in Sources */ = {isa = PBXBuildFile; fileRef = E45576F416B2B37200A76B32 /* CasperStore.m */; };
 		E4D8936E11527B74007E1F53 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4D8936B11527B74007E1F53 /* main.mm */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +109,10 @@
 		E42EC43716B19ADB003AE0C3 /* PortifolioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PortifolioViewController.xib; sourceTree = "<group>"; };
 		E42EC43A16B19B0D003AE0C3 /* PortifolioRowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortifolioRowViewController.h; sourceTree = "<group>"; };
 		E42EC43B16B19B0D003AE0C3 /* PortifolioRowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortifolioRowViewController.m; sourceTree = "<group>"; };
+		E45576F016B2B2AF00A76B32 /* CasperTestDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CasperTestDataClass.h; sourceTree = "<group>"; };
+		E45576F116B2B2AF00A76B32 /* CasperTestDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CasperTestDataClass.m; sourceTree = "<group>"; };
+		E45576F316B2B37200A76B32 /* CasperStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CasperStore.h; sourceTree = "<group>"; };
+		E45576F416B2B37200A76B32 /* CasperStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CasperStore.m; sourceTree = "<group>"; };
 		E4A823A312561BE3002F86A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E4D8936B11527B74007E1F53 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = main.mm; path = src/main.mm; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -279,6 +285,10 @@
 		E4DCA82E16B2B1B90011BE2A /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				E45576F016B2B2AF00A76B32 /* CasperTestDataClass.h */,
+				E45576F116B2B2AF00A76B32 /* CasperTestDataClass.m */,
+				E45576F316B2B37200A76B32 /* CasperStore.h */,
+				E45576F416B2B37200A76B32 /* CasperStore.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -425,6 +435,8 @@
 				BDEACDC616B18D00007FCF96 /* FioritoViewController.mm in Sources */,
 				E42EC43816B19ADB003AE0C3 /* PortifolioViewController.m in Sources */,
 				E42EC43C16B19B0D003AE0C3 /* PortifolioRowViewController.m in Sources */,
+				E45576F216B2B2AF00A76B32 /* CasperTestDataClass.m in Sources */,
+				E45576F516B2B37200A76B32 /* CasperStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

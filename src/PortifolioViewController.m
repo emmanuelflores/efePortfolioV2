@@ -19,7 +19,6 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        
         self.view.backgroundColor = [UIColor grayColor];
         
         float viewHeight = self.view.bounds.size.height;
@@ -33,8 +32,7 @@
         [self.view addSubview:myLabel];
         
         UITableViewController * portTVC = [[PortifolioRowViewController alloc] initWithStyle:UITableViewStylePlain];
-        portTVC.tableView.frame = CGRectMake(0,30,1000
-                                             ,1);
+        portTVC.tableView.frame = CGRectMake(0,30,100,1);
         [self.view addSubview:portTVC.tableView];
         
         UITableViewController * portTVC2 = [[PortifolioRowViewController alloc] initWithStyle:UITableViewStylePlain];
