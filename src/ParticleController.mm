@@ -34,7 +34,6 @@ void ParticleController::draw() {
         ofVertex( (*p)->mLoc.x, (*p)->mLoc.y, 0.0f);
     }
     
-    //glEnd();
     ofEndShape();
 }
 
