@@ -6,7 +6,7 @@
 #include "Particle.h"
 #include <vector>
 
-static const unsigned int AMOUNT=350;//300
+static const unsigned int AMOUNT=600;//300 350
 static const unsigned int TRACE_LENGTH=4;//5 or less
 
 class FioritoAttractor : public ofxiPhoneApp {

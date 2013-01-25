@@ -22,13 +22,11 @@ void ParticleController::draw() {
         (*p)->draw();
     }
     
-    
-    
     ofNoFill();
     ofBeginShape();
     
     for (list<ParticleCl*>::iterator p = mParticles.begin(); p != mParticles.end(); ++p ) {
-        //glColor4f( sin( getElapsedSeconds() ), 1.0f - p->mYPercentage, 1.0f - p->mXPercentage, 1.0f - p->mAgePercentage);
+//        glColor4f( sin( ofGetElapsedTimef() ), 1.0f - (*p)->mYPercentage, 1.0f - (*p)->mXPercentage, 1.0f - (*p)->mAgePercentage);
         //glColor4f( sin( ofGetLastFrameTime() ), 1.0f - p->mYPercentage, 1.0f - p->mXPercentage, 1.0f - p->mAgePercentage);
         glColor4f(0,0,0,0.2f);
         ofVertex( (*p)->mLoc.x, (*p)->mLoc.y, 0.0f);

@@ -8,6 +8,13 @@
 
 #include "CloudGesture.h"
 
+CloudGesture::CloudGesture(){
+    
+}
+
+CloudGesture::~CloudGesture(){
+    
+}
 //--------------------------------------------------------------
 void CloudGesture::setup(){
 	// initialize the accelerometer

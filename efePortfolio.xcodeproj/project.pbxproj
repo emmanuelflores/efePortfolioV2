@@ -36,6 +36,9 @@
 		BD699D4E16B2A2F90028B5E0 /* CloudViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BD699D4D16B2A2F90028B5E0 /* CloudViewController.mm */; };
 		BD699D5116B2A3B00028B5E0 /* CloudGesture.mm in Sources */ = {isa = PBXBuildFile; fileRef = BD699D4F16B2A3AF0028B5E0 /* CloudGesture.mm */; };
 		BD8EE4E816B1837300706EC9 /* InfoLog in Resources */ = {isa = PBXBuildFile; fileRef = BD8EE4E716B1837300706EC9 /* InfoLog */; };
+		BDE30D1416B2EDF7002DA270 /* BoxesViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BDE30D1316B2EDF7002DA270 /* BoxesViewController.mm */; };
+		BDE30D1716B2EE69002DA270 /* BoxesApp.mm in Sources */ = {isa = PBXBuildFile; fileRef = BDE30D1516B2EE68002DA270 /* BoxesApp.mm */; };
+		BDE30D1A16B2EE95002DA270 /* proximityBoxes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDE30D1816B2EE95002DA270 /* proximityBoxes.cpp */; };
 		BDEACDBE16B189FD007FCF96 /* FioritoAttractor.mm in Sources */ = {isa = PBXBuildFile; fileRef = BDEACDBC16B189FD007FCF96 /* FioritoAttractor.mm */; };
 		BDEACDC316B18A97007FCF96 /* Attractor.mm in Sources */ = {isa = PBXBuildFile; fileRef = BDEACDC116B18A97007FCF96 /* Attractor.mm */; };
 		BDEACDC616B18D00007FCF96 /* FioritoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BDEACDC516B18D00007FCF96 /* FioritoViewController.mm */; };
@@ -107,7 +110,13 @@
 		BD699D4D16B2A2F90028B5E0 /* CloudViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CloudViewController.mm; sourceTree = "<group>"; };
 		BD699D4F16B2A3AF0028B5E0 /* CloudGesture.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CloudGesture.mm; sourceTree = "<group>"; };
 		BD699D5016B2A3B00028B5E0 /* CloudGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudGesture.h; sourceTree = "<group>"; };
-		BD8EE4E716B1837300706EC9 /* InfoLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = InfoLog; path = ../InfoLog; sourceTree = "<group>"; };
+		BD8EE4E716B1837300706EC9 /* InfoLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = InfoLog; sourceTree = "<group>"; };
+		BDE30D1216B2EDF7002DA270 /* BoxesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoxesViewController.h; sourceTree = "<group>"; };
+		BDE30D1316B2EDF7002DA270 /* BoxesViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BoxesViewController.mm; sourceTree = "<group>"; };
+		BDE30D1516B2EE68002DA270 /* BoxesApp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BoxesApp.mm; sourceTree = "<group>"; };
+		BDE30D1616B2EE69002DA270 /* BoxesApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoxesApp.h; sourceTree = "<group>"; };
+		BDE30D1816B2EE95002DA270 /* proximityBoxes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = proximityBoxes.cpp; sourceTree = "<group>"; };
+		BDE30D1916B2EE95002DA270 /* proximityBoxes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = proximityBoxes.h; sourceTree = "<group>"; };
 		BDEACDBC16B189FD007FCF96 /* FioritoAttractor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FioritoAttractor.mm; sourceTree = "<group>"; };
 		BDEACDBD16B189FD007FCF96 /* FioritoAttractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FioritoAttractor.h; sourceTree = "<group>"; };
 		BDEACDC016B18A97007FCF96 /* Attractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attractor.h; sourceTree = "<group>"; };
@@ -162,6 +171,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				BD8EE4E716B1837300706EC9 /* InfoLog */,
 				BD667C2E16B2AE53005F959B /* test72.png */,
 				BD4FC28116B1716000EB70BD /* artwork */,
 				E4D8936A11527B74007E1F53 /* src */,
@@ -292,6 +302,30 @@
 			name = cloudApp;
 			sourceTree = "<group>";
 		};
+		BDE30D1016B2EDC3002DA270 /* boxesApp */ = {
+			isa = PBXGroup;
+			children = (
+				BDE30D1216B2EDF7002DA270 /* BoxesViewController.h */,
+				BDE30D1316B2EDF7002DA270 /* BoxesViewController.mm */,
+				BDE30D1516B2EE68002DA270 /* BoxesApp.mm */,
+				BDE30D1616B2EE69002DA270 /* BoxesApp.h */,
+				BDE30D1816B2EE95002DA270 /* proximityBoxes.cpp */,
+				BDE30D1916B2EE95002DA270 /* proximityBoxes.h */,
+			);
+			name = boxesApp;
+			sourceTree = "<group>";
+		};
+		BDE30D1116B2EDD6002DA270 /* exampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				914F466816AC3E2700786D52 /* ExampleOFApp.h */,
+				914F466916AC3E2700786D52 /* ExampleOFApp.mm */,
+				914F466A16AC3E2700786D52 /* ExampleOFAppViewController.h */,
+				914F466B16AC3E2700786D52 /* ExampleOFAppViewController.mm */,
+			);
+			name = exampleApp;
+			sourceTree = "<group>";
+		};
 		BDEACDBF16B18A74007FCF96 /* fioritoApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,7 +353,6 @@
 			children = (
 				BD667C6416B2CFF1005F959B /* vimeoLoader */,
 				BD667C3916B2C43D005F959B /* webConnection */,
-				BD8EE4E716B1837300706EC9 /* InfoLog */,
 				E4D8936B11527B74007E1F53 /* main.mm */,
 				BD4FC28216B1718900EB70BD /* iPadStoryboard.storyboard */,
 				914F466216AC3E1C00786D52 /* AppDelegate.h */,
@@ -335,12 +368,10 @@
 		d1cfea8461b96256b1b8c57d5973712c /* openFrameworks Apps */ = {
 			isa = PBXGroup;
 			children = (
+				BDE30D1116B2EDD6002DA270 /* exampleApp */,
+				BDE30D1016B2EDC3002DA270 /* boxesApp */,
 				BD699D4216B2A1900028B5E0 /* cloudApp */,
 				BDEACDBF16B18A74007FCF96 /* fioritoApp */,
-				914F466816AC3E2700786D52 /* ExampleOFApp.h */,
-				914F466916AC3E2700786D52 /* ExampleOFApp.mm */,
-				914F466A16AC3E2700786D52 /* ExampleOFAppViewController.h */,
-				914F466B16AC3E2700786D52 /* ExampleOFAppViewController.mm */,
 			);
 			name = "openFrameworks Apps";
 			sourceTree = "<group>";
@@ -480,6 +511,9 @@
 				BD699D4E16B2A2F90028B5E0 /* CloudViewController.mm in Sources */,
 				BD699D5116B2A3B00028B5E0 /* CloudGesture.mm in Sources */,
 				BD667C6016B2CD8F005F959B /* Reachability.m in Sources */,
+				BDE30D1416B2EDF7002DA270 /* BoxesViewController.mm in Sources */,
+				BDE30D1716B2EE69002DA270 /* BoxesApp.mm in Sources */,
+				BDE30D1A16B2EE95002DA270 /* proximityBoxes.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

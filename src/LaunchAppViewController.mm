@@ -5,6 +5,8 @@
 #import "FioritoAttractor.h"
 #import "CloudViewController.h"
 #import "CloudGesture.h"
+#import "BoxesViewController.h"
+#import "BoxesApp.h"
 
 @interface LaunchAppViewController () {}
 
@@ -85,7 +87,22 @@
     [self.navigationController pushViewController:cvc animated:YES];
 }
 
-
+-(void)launchBoxesApp:(id)sender{
+    BoxesApp *boxApp = new BoxesApp();
+    
+    CGRect mainScreenFrame = [[UIScreen mainScreen]bounds];
+    CGRect frame = mainScreenFrame;
+    if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
+        self.interfaceOrientation == UIInterfaceOrientationLandscapeRight) {
+        frame.size.width = mainScreenFrame.size.height;
+        frame.size.height = mainScreenFrame.size.width;
+    }
+    
+    //create the app
+    BoxesViewController *cvc = [[BoxesViewController alloc]initWithFrame:frame app:boxApp];
+    //add it
+    [self.navigationController pushViewController:cvc animated:YES];
+}
 
 #pragma mark - Life Cycle
 

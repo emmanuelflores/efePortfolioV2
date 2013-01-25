@@ -17,6 +17,8 @@
 class CloudGesture : public ofxiPhoneApp{
 	
 public:
+    CloudGesture();
+    ~CloudGesture();
     void setup();
     void update();
     void draw();
