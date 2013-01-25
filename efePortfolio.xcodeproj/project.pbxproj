@@ -27,7 +27,8 @@
 		BD4FC2BE16B17BEE00EB70BD /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC2BD16B17BEE00EB70BD /* Default-Landscape@2x~ipad.png */; };
 		BD4FC2C016B17BF200EB70BD /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC2BF16B17BF200EB70BD /* Default-Landscape~ipad.png */; };
 		BD667C2F16B2AE53005F959B /* test72.png in Resources */ = {isa = PBXBuildFile; fileRef = BD667C2E16B2AE53005F959B /* test72.png */; };
-		BD667C4816B2C655005F959B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BD667C4716B2C655005F959B /* Reachability.m */; };
+		BD667C6016B2CD8F005F959B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BD667C5F16B2CD8F005F959B /* Reachability.m */; };
+		BD667C6216B2CDB8005F959B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD667C6116B2CDB8005F959B /* SystemConfiguration.framework */; };
 		BD699D3016B27CF20028B5E0 /* SimplePopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD699D2F16B27CF20028B5E0 /* SimplePopoverView.m */; };
 		BD699D4516B2A1CE0028B5E0 /* ParticleCl.mm in Sources */ = {isa = PBXBuildFile; fileRef = BD699D4316B2A1CE0028B5E0 /* ParticleCl.mm */; };
 		BD699D4816B2A2080028B5E0 /* Perlin.mm in Sources */ = {isa = PBXBuildFile; fileRef = BD699D4716B2A2080028B5E0 /* Perlin.mm */; };
@@ -91,8 +92,9 @@
 		BD4FC2BD16B17BEE00EB70BD /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		BD4FC2BF16B17BF200EB70BD /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		BD667C2E16B2AE53005F959B /* test72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test72.png; sourceTree = "<group>"; };
-		BD667C4616B2C655005F959B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		BD667C4716B2C655005F959B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		BD667C5E16B2CD8F005F959B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		BD667C5F16B2CD8F005F959B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		BD667C6116B2CDB8005F959B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		BD699D2E16B27CF20028B5E0 /* SimplePopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePopoverView.h; sourceTree = "<group>"; };
 		BD699D2F16B27CF20028B5E0 /* SimplePopoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePopoverView.m; sourceTree = "<group>"; };
 		BD699D4316B2A1CE0028B5E0 /* ParticleCl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ParticleCl.mm; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD667C6216B2CDB8005F959B /* SystemConfiguration.framework in Frameworks */,
 				E41D421413B3A95300A75A5D /* libofxiPhone_iphoneos_Debug.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
@@ -165,6 +168,7 @@
 				BB24E1F710DAA51900E9C588 /* openFrameworks */,
 				BB16F26B0F2B646B00518274 /* addons */,
 				BB16E9930F2B1E5900518274 /* libs */,
+				BD667C6316B2CDBF005F959B /* otherFrameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
 			name = CustomTemplate;
@@ -250,10 +254,25 @@
 		BD667C3916B2C43D005F959B /* webConnection */ = {
 			isa = PBXGroup;
 			children = (
-				BD667C4616B2C655005F959B /* Reachability.h */,
-				BD667C4716B2C655005F959B /* Reachability.m */,
+				BD667C5E16B2CD8F005F959B /* Reachability.h */,
+				BD667C5F16B2CD8F005F959B /* Reachability.m */,
 			);
 			name = webConnection;
+			sourceTree = "<group>";
+		};
+		BD667C6316B2CDBF005F959B /* otherFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD667C6116B2CDB8005F959B /* SystemConfiguration.framework */,
+			);
+			name = otherFrameworks;
+			sourceTree = "<group>";
+		};
+		BD667C6416B2CFF1005F959B /* vimeoLoader */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = vimeoLoader;
 			sourceTree = "<group>";
 		};
 		BD699D4216B2A1900028B5E0 /* cloudApp */ = {
@@ -298,6 +317,7 @@
 		E4D8936A11527B74007E1F53 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				BD667C6416B2CFF1005F959B /* vimeoLoader */,
 				BD667C3916B2C43D005F959B /* webConnection */,
 				BD8EE4E716B1837300706EC9 /* InfoLog */,
 				E4D8936B11527B74007E1F53 /* main.mm */,
@@ -459,7 +479,7 @@
 				BD699D4B16B2A2840028B5E0 /* ParticleController.mm in Sources */,
 				BD699D4E16B2A2F90028B5E0 /* CloudViewController.mm in Sources */,
 				BD699D5116B2A3B00028B5E0 /* CloudGesture.mm in Sources */,
-				BD667C4816B2C655005F959B /* Reachability.m in Sources */,
+				BD667C6016B2CD8F005F959B /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

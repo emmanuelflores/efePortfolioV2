@@ -35,7 +35,15 @@
     
     //push viewcontroller
     ExampleOFAppViewController *exampleOFAppViewController = [[ExampleOFAppViewController alloc] initWithFrame:frame app:exampleOFApp];
-    exampleOFAppViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    CATransition* transition = [CATransition animation];
+    transition.duration = 0.8;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.type = kCATransitionFade;
+    transition.subtype = kCATransitionFromTop;
+    //kCATransitionMoveIn; //, kCATransitionPush, kCATransitionReveal, kCATransitionFade
+    //transition.subtype = kCATransitionFromTop; //kCATransitionFromLeft, kCATransitionFromRight, kCATransitionFromTop, kCATransitionFromBottom
+    [self.navigationController.view.layer addAnimation:transition forKey:nil];
+    //[[self navigationController] popViewControllerAnimated:NO];
     [self.navigationController pushViewController:exampleOFAppViewController animated:YES];
 }
 
@@ -51,7 +59,12 @@
     }
     
     FioritoViewController *fvc = [[FioritoViewController alloc]initWithFrame:frame app:fioritoApp];
-    fvc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+//    CATransition* transition = [CATransition animation];
+//    transition.duration = 0.8;
+//    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+//    transition.type = kCATransitionFade;
+//    transition.subtype = kCATransitionFromTop;
+//    [self.navigationController.view.layer addAnimation:transition forKey:nil];
     [self.navigationController pushViewController:fvc animated:YES];
 }
 
@@ -71,6 +84,8 @@
     //add it
     [self.navigationController pushViewController:cvc animated:YES];
 }
+
+
 
 #pragma mark - Life Cycle
 
