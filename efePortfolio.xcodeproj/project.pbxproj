@@ -27,6 +27,7 @@
 		BD4FC2BE16B17BEE00EB70BD /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC2BD16B17BEE00EB70BD /* Default-Landscape@2x~ipad.png */; };
 		BD4FC2C016B17BF200EB70BD /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC2BF16B17BF200EB70BD /* Default-Landscape~ipad.png */; };
 		BD667C2F16B2AE53005F959B /* test72.png in Resources */ = {isa = PBXBuildFile; fileRef = BD667C2E16B2AE53005F959B /* test72.png */; };
+		BD667C4816B2C655005F959B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BD667C4716B2C655005F959B /* Reachability.m */; };
 		BD699D3016B27CF20028B5E0 /* SimplePopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD699D2F16B27CF20028B5E0 /* SimplePopoverView.m */; };
 		BD699D4516B2A1CE0028B5E0 /* ParticleCl.mm in Sources */ = {isa = PBXBuildFile; fileRef = BD699D4316B2A1CE0028B5E0 /* ParticleCl.mm */; };
 		BD699D4816B2A2080028B5E0 /* Perlin.mm in Sources */ = {isa = PBXBuildFile; fileRef = BD699D4716B2A2080028B5E0 /* Perlin.mm */; };
@@ -90,6 +91,8 @@
 		BD4FC2BD16B17BEE00EB70BD /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		BD4FC2BF16B17BF200EB70BD /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		BD667C2E16B2AE53005F959B /* test72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test72.png; sourceTree = "<group>"; };
+		BD667C4616B2C655005F959B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		BD667C4716B2C655005F959B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		BD699D2E16B27CF20028B5E0 /* SimplePopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePopoverView.h; sourceTree = "<group>"; };
 		BD699D2F16B27CF20028B5E0 /* SimplePopoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePopoverView.m; sourceTree = "<group>"; };
 		BD699D4316B2A1CE0028B5E0 /* ParticleCl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ParticleCl.mm; sourceTree = "<group>"; };
@@ -244,6 +247,15 @@
 			name = viewcontrollers;
 			sourceTree = "<group>";
 		};
+		BD667C3916B2C43D005F959B /* webConnection */ = {
+			isa = PBXGroup;
+			children = (
+				BD667C4616B2C655005F959B /* Reachability.h */,
+				BD667C4716B2C655005F959B /* Reachability.m */,
+			);
+			name = webConnection;
+			sourceTree = "<group>";
+		};
 		BD699D4216B2A1900028B5E0 /* cloudApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +298,7 @@
 		E4D8936A11527B74007E1F53 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				BD667C3916B2C43D005F959B /* webConnection */,
 				BD8EE4E716B1837300706EC9 /* InfoLog */,
 				E4D8936B11527B74007E1F53 /* main.mm */,
 				BD4FC28216B1718900EB70BD /* iPadStoryboard.storyboard */,
@@ -446,6 +459,7 @@
 				BD699D4B16B2A2840028B5E0 /* ParticleController.mm in Sources */,
 				BD699D4E16B2A2F90028B5E0 /* CloudViewController.mm in Sources */,
 				BD699D5116B2A3B00028B5E0 /* CloudGesture.mm in Sources */,
+				BD667C4816B2C655005F959B /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

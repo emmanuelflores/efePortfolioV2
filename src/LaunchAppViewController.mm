@@ -33,9 +33,9 @@
         frame.size.height = mainScreenFrame.size.width;
     }
     
-    // create the app
+    //push viewcontroller
     ExampleOFAppViewController *exampleOFAppViewController = [[ExampleOFAppViewController alloc] initWithFrame:frame app:exampleOFApp];
-    // add it
+    exampleOFAppViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     [self.navigationController pushViewController:exampleOFAppViewController animated:YES];
 }
 
@@ -50,9 +50,8 @@
         frame.size.height = mainScreenFrame.size.width;
     }
     
-    //create the app
     FioritoViewController *fvc = [[FioritoViewController alloc]initWithFrame:frame app:fioritoApp];
-    //add it
+    fvc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     [self.navigationController pushViewController:fvc animated:YES];
 }
 
