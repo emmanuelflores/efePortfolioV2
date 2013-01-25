@@ -7,7 +7,6 @@
         <!--Launch App View Controller-->
         <scene sceneID="iG8-MA-sgU">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="phw-2h-k4Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="jpD-AE-jGV" customClass="LaunchAppViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q3b-a8-BvY">
                         <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
@@ -107,6 +106,7 @@
                     <navigationItem key="navigationItem" id="zSk-BR-Tb3"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="phw-2h-k4Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="857" y="-7"/>
         </scene>
