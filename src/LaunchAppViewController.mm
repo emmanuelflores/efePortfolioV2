@@ -3,6 +3,8 @@
 #import "ExampleOFApp.h"
 #import "FioritoViewController.h"
 #import "FioritoAttractor.h"
+#import "CloudViewController.h"
+#import "CloudGesture.h"
 
 @interface LaunchAppViewController () {}
 
@@ -10,7 +12,7 @@
 
 @implementation LaunchAppViewController
 
-#pragma mark - IB
+#pragma mark - Buttons to access the GL scenes
 
 - (IBAction)launchAppPressed:(id)sender {
     
@@ -52,6 +54,23 @@
     FioritoViewController *fvc = [[FioritoViewController alloc]initWithFrame:frame app:fioritoApp];
     //add it
     [self.navigationController pushViewController:fvc animated:YES];
+}
+
+-(void)launchCloudView:(id)sender{
+    CloudGesture *cloudApp = new CloudGesture();
+    
+    CGRect mainScreenFrame = [[UIScreen mainScreen]bounds];
+    CGRect frame = mainScreenFrame;
+    if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
+        self.interfaceOrientation == UIInterfaceOrientationLandscapeRight) {
+        frame.size.width = mainScreenFrame.size.height;
+        frame.size.height = mainScreenFrame.size.width;
+    }
+    
+    //create the app
+    CloudViewController *cvc = [[CloudViewController alloc]initWithFrame:frame app:cloudApp];
+    //add it
+    [self.navigationController pushViewController:cvc animated:YES];
 }
 
 #pragma mark - Life Cycle

@@ -28,6 +28,11 @@
 		BD4FC2C016B17BF200EB70BD /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC2BF16B17BF200EB70BD /* Default-Landscape~ipad.png */; };
 		BD4FC2C216B182B000EB70BD /* test72.png in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC2C116B182B000EB70BD /* test72.png */; };
 		BD699D3016B27CF20028B5E0 /* SimplePopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD699D2F16B27CF20028B5E0 /* SimplePopoverView.m */; };
+		BD699D4516B2A1CE0028B5E0 /* ParticleCl.mm in Sources */ = {isa = PBXBuildFile; fileRef = BD699D4316B2A1CE0028B5E0 /* ParticleCl.mm */; };
+		BD699D4816B2A2080028B5E0 /* Perlin.mm in Sources */ = {isa = PBXBuildFile; fileRef = BD699D4716B2A2080028B5E0 /* Perlin.mm */; };
+		BD699D4B16B2A2840028B5E0 /* ParticleController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BD699D4A16B2A2840028B5E0 /* ParticleController.mm */; };
+		BD699D4E16B2A2F90028B5E0 /* CloudViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BD699D4D16B2A2F90028B5E0 /* CloudViewController.mm */; };
+		BD699D5116B2A3B00028B5E0 /* CloudGesture.mm in Sources */ = {isa = PBXBuildFile; fileRef = BD699D4F16B2A3AF0028B5E0 /* CloudGesture.mm */; };
 		BD8EE4E816B1837300706EC9 /* InfoLog in Resources */ = {isa = PBXBuildFile; fileRef = BD8EE4E716B1837300706EC9 /* InfoLog */; };
 		BDEACDBE16B189FD007FCF96 /* FioritoAttractor.mm in Sources */ = {isa = PBXBuildFile; fileRef = BDEACDBC16B189FD007FCF96 /* FioritoAttractor.mm */; };
 		BDEACDC316B18A97007FCF96 /* Attractor.mm in Sources */ = {isa = PBXBuildFile; fileRef = BDEACDC116B18A97007FCF96 /* Attractor.mm */; };
@@ -87,6 +92,16 @@
 		BD4FC2C116B182B000EB70BD /* test72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test72.png; sourceTree = "<group>"; };
 		BD699D2E16B27CF20028B5E0 /* SimplePopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePopoverView.h; sourceTree = "<group>"; };
 		BD699D2F16B27CF20028B5E0 /* SimplePopoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePopoverView.m; sourceTree = "<group>"; };
+		BD699D4316B2A1CE0028B5E0 /* ParticleCl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ParticleCl.mm; sourceTree = "<group>"; };
+		BD699D4416B2A1CE0028B5E0 /* ParticleCl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleCl.h; sourceTree = "<group>"; };
+		BD699D4616B2A2080028B5E0 /* Perlin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Perlin.h; sourceTree = "<group>"; };
+		BD699D4716B2A2080028B5E0 /* Perlin.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Perlin.mm; sourceTree = "<group>"; };
+		BD699D4916B2A2840028B5E0 /* ParticleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleController.h; sourceTree = "<group>"; };
+		BD699D4A16B2A2840028B5E0 /* ParticleController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ParticleController.mm; sourceTree = "<group>"; };
+		BD699D4C16B2A2F80028B5E0 /* CloudViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudViewController.h; sourceTree = "<group>"; };
+		BD699D4D16B2A2F90028B5E0 /* CloudViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CloudViewController.mm; sourceTree = "<group>"; };
+		BD699D4F16B2A3AF0028B5E0 /* CloudGesture.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CloudGesture.mm; sourceTree = "<group>"; };
+		BD699D5016B2A3B00028B5E0 /* CloudGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudGesture.h; sourceTree = "<group>"; };
 		BD8EE4E716B1837300706EC9 /* InfoLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = InfoLog; path = ../InfoLog; sourceTree = "<group>"; };
 		BDEACDBC16B189FD007FCF96 /* FioritoAttractor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FioritoAttractor.mm; sourceTree = "<group>"; };
 		BDEACDBD16B189FD007FCF96 /* FioritoAttractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FioritoAttractor.h; sourceTree = "<group>"; };
@@ -229,13 +244,30 @@
 			name = viewcontrollers;
 			sourceTree = "<group>";
 		};
+		BD699D4216B2A1900028B5E0 /* cloudApp */ = {
+			isa = PBXGroup;
+			children = (
+				BD699D4C16B2A2F80028B5E0 /* CloudViewController.h */,
+				BD699D4D16B2A2F90028B5E0 /* CloudViewController.mm */,
+				BD699D5016B2A3B00028B5E0 /* CloudGesture.h */,
+				BD699D4F16B2A3AF0028B5E0 /* CloudGesture.mm */,
+				BD699D4916B2A2840028B5E0 /* ParticleController.h */,
+				BD699D4A16B2A2840028B5E0 /* ParticleController.mm */,
+				BD699D4316B2A1CE0028B5E0 /* ParticleCl.mm */,
+				BD699D4416B2A1CE0028B5E0 /* ParticleCl.h */,
+				BD699D4616B2A2080028B5E0 /* Perlin.h */,
+				BD699D4716B2A2080028B5E0 /* Perlin.mm */,
+			);
+			name = cloudApp;
+			sourceTree = "<group>";
+		};
 		BDEACDBF16B18A74007FCF96 /* fioritoApp */ = {
 			isa = PBXGroup;
 			children = (
-				BDEACDBC16B189FD007FCF96 /* FioritoAttractor.mm */,
-				BDEACDBD16B189FD007FCF96 /* FioritoAttractor.h */,
 				BDEACDC416B18D00007FCF96 /* FioritoViewController.h */,
 				BDEACDC516B18D00007FCF96 /* FioritoViewController.mm */,
+				BDEACDBD16B189FD007FCF96 /* FioritoAttractor.h */,
+				BDEACDBC16B189FD007FCF96 /* FioritoAttractor.mm */,
 				BDEACDC016B18A97007FCF96 /* Attractor.h */,
 				BDEACDC116B18A97007FCF96 /* Attractor.mm */,
 				BDEACDC216B18A97007FCF96 /* Particle.h */,
@@ -270,6 +302,7 @@
 		d1cfea8461b96256b1b8c57d5973712c /* openFrameworks Apps */ = {
 			isa = PBXGroup;
 			children = (
+				BD699D4216B2A1900028B5E0 /* cloudApp */,
 				BDEACDBF16B18A74007FCF96 /* fioritoApp */,
 				914F466816AC3E2700786D52 /* ExampleOFApp.h */,
 				914F466916AC3E2700786D52 /* ExampleOFApp.mm */,
@@ -408,6 +441,11 @@
 				BDEACDC316B18A97007FCF96 /* Attractor.mm in Sources */,
 				BDEACDC616B18D00007FCF96 /* FioritoViewController.mm in Sources */,
 				BD699D3016B27CF20028B5E0 /* SimplePopoverView.m in Sources */,
+				BD699D4516B2A1CE0028B5E0 /* ParticleCl.mm in Sources */,
+				BD699D4816B2A2080028B5E0 /* Perlin.mm in Sources */,
+				BD699D4B16B2A2840028B5E0 /* ParticleController.mm in Sources */,
+				BD699D4E16B2A2F90028B5E0 /* CloudViewController.mm in Sources */,
+				BD699D5116B2A3B00028B5E0 /* CloudGesture.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
