@@ -53,8 +53,8 @@
 
 -(IBAction)launchPortifolio:(id)sender
 {
-    UIViewController * portVC = [[PortifolioViewController alloc]init];
-    [self.navigationController pushViewController:portVC animated:YES];
+    PortifolioViewController *portifolioVC = [[PortifolioViewController alloc]init];
+    [self.navigationController pushViewController:portifolioVC animated:YES];
 }
 
 #pragma mark - Life Cycle

@@ -1,24 +1,25 @@
 //
-//  PortifolioRowViewController.m
+//  SplitTableViewController.m
 //  efePortfolio
 //
-//  Created by Casper Schipper on 24-01-13.
+//  Created by Casper Schipper on 25-01-13.
 //
 //
 
-#import "PortifolioRowViewController.h"
+#import "SplitTableViewController.h"
+#import "TestObjects.h"
 
-@interface PortifolioRowViewController ()
+@interface SplitTableViewController ()
 
 @end
 
-@implementation PortifolioRowViewController
+@implementation SplitTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self) {
-        self.view.backgroundColor = [UIColor lightGrayColor];
+        NSMutableArray *namesArray;
     }
     return self;
 }
@@ -26,7 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -44,26 +45,28 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
+#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 10;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 1;
+    return 10;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
     
     // Configure the cell...
-    NSLog(@"I arrived here");
-    cell.textLabel.text = @"hallo wereld";
-    cell.backgroundColor = [UIColor greenColor];
-    
+    cell.textLabel.text = @"happy Casper";
     return cell;
 }
 
