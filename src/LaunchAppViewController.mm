@@ -4,6 +4,8 @@
 #import "FioritoViewController.h"
 #import "FioritoAttractor.h"
 
+#import "PortifolioViewController.h"
+
 @interface LaunchAppViewController () {}
 
 @end
@@ -47,6 +49,12 @@
     FioritoViewController *fvc = [[FioritoViewController alloc]initWithFrame:frame app:fioritoApp];
     //add it
     [self.navigationController pushViewController:fvc animated:YES];
+}
+
+-(IBAction)launchPortifolio:(id)sender
+{
+    PortifolioViewController *portifolioVC = [[PortifolioViewController alloc]init];
+    [self.navigationController pushViewController:portifolioVC animated:YES];
 }
 
 #pragma mark - Life Cycle

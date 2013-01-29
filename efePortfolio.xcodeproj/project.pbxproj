@@ -36,7 +36,12 @@
 		E41D400D13B39D2100A75A5D /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41D400813B39D2100A75A5D /* CoreVideo.framework */; };
 		E41D400E13B39D2100A75A5D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41D400913B39D2100A75A5D /* MapKit.framework */; };
 		E41D421413B3A95300A75A5D /* libofxiPhone_iphoneos_Debug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E41D410213B3A0D800A75A5D /* libofxiPhone_iphoneos_Debug.a */; };
+		E4296CB716B69C4E00452DE5 /* PortifolioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4296CB516B69C4E00452DE5 /* PortifolioViewController.m */; };
+		E4296CB816B69C4E00452DE5 /* PortifolioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4296CB616B69C4E00452DE5 /* PortifolioViewController.xib */; };
+		E4296D1216B6C5CD00452DE5 /* effe.png in Resources */ = {isa = PBXBuildFile; fileRef = E4296D1116B6C5CD00452DE5 /* effe.png */; };
+		E434AD5916B7EDF800267144 /* PortifolioCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E434AD5816B7EDF800267144 /* PortifolioCell.m */; };
 		E4D8936E11527B74007E1F53 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4D8936B11527B74007E1F53 /* main.mm */; };
+		E4F50A5F16B2E90B003A1B8C /* TestObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F50A5E16B2E90A003A1B8C /* TestObjects.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,8 +104,16 @@
 		E41D400813B39D2100A75A5D /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		E41D400913B39D2100A75A5D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		E41D40FD13B3A0D800A75A5D /* iOS+OFLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "iOS+OFLib.xcodeproj"; path = "../../../libs/openFrameworksCompiled/project/ios/iOS+OFLib.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		E4296CB416B69C4E00452DE5 /* PortifolioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortifolioViewController.h; sourceTree = "<group>"; };
+		E4296CB516B69C4E00452DE5 /* PortifolioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortifolioViewController.m; sourceTree = "<group>"; };
+		E4296CB616B69C4E00452DE5 /* PortifolioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PortifolioViewController.xib; sourceTree = "<group>"; };
+		E4296D1116B6C5CD00452DE5 /* effe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = effe.png; sourceTree = "<group>"; };
+		E434AD5716B7EDF800267144 /* PortifolioCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortifolioCell.h; sourceTree = "<group>"; };
+		E434AD5816B7EDF800267144 /* PortifolioCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortifolioCell.m; sourceTree = "<group>"; };
 		E4A823A312561BE3002F86A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E4D8936B11527B74007E1F53 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = main.mm; path = src/main.mm; sourceTree = SOURCE_ROOT; };
+		E4F50A5D16B2E90A003A1B8C /* TestObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObjects.h; sourceTree = "<group>"; };
+		E4F50A5E16B2E90A003A1B8C /* TestObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObjects.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +151,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				E4296D1116B6C5CD00452DE5 /* effe.png */,
 				BD4FC28116B1716000EB70BD /* artwork */,
 				E4D8936A11527B74007E1F53 /* src */,
 				BB24E1F710DAA51900E9C588 /* openFrameworks */,
@@ -221,6 +235,11 @@
 		BD4FC28416B175AB00EB70BD /* viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
+				E4296CB416B69C4E00452DE5 /* PortifolioViewController.h */,
+				E4296CB516B69C4E00452DE5 /* PortifolioViewController.m */,
+				E4296CB616B69C4E00452DE5 /* PortifolioViewController.xib */,
+				E434AD5716B7EDF800267144 /* PortifolioCell.h */,
+				E434AD5816B7EDF800267144 /* PortifolioCell.m */,
 			);
 			name = viewcontrollers;
 			sourceTree = "<group>";
@@ -250,6 +269,7 @@
 		E4D8936A11527B74007E1F53 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				E4DCA82E16B2B1B90011BE2A /* Data */,
 				BD4FC28416B175AB00EB70BD /* viewcontrollers */,
 				E4D8936B11527B74007E1F53 /* main.mm */,
 				BD4FC28216B1718900EB70BD /* iPadStoryboard.storyboard */,
@@ -261,6 +281,15 @@
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
+		};
+		E4DCA82E16B2B1B90011BE2A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E4F50A5D16B2E90A003A1B8C /* TestObjects.h */,
+				E4F50A5E16B2E90A003A1B8C /* TestObjects.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
 		};
 		d1cfea8461b96256b1b8c57d5973712c /* openFrameworks Apps */ = {
 			isa = PBXGroup;
@@ -354,6 +383,8 @@
 				BD4FC2C016B17BF200EB70BD /* Default-Landscape~ipad.png in Resources */,
 				BD4FC2C216B182B000EB70BD /* test72.png in Resources */,
 				BD8EE4E816B1837300706EC9 /* Infos in Resources */,
+				E4296CB816B69C4E00452DE5 /* PortifolioViewController.xib in Resources */,
+				E4296D1216B6C5CD00452DE5 /* effe.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +432,9 @@
 				BDEACDBE16B189FD007FCF96 /* FioritoAttractor.mm in Sources */,
 				BDEACDC316B18A97007FCF96 /* Attractor.mm in Sources */,
 				BDEACDC616B18D00007FCF96 /* FioritoViewController.mm in Sources */,
+				E4F50A5F16B2E90B003A1B8C /* TestObjects.m in Sources */,
+				E4296CB716B69C4E00452DE5 /* PortifolioViewController.m in Sources */,
+				E434AD5916B7EDF800267144 /* PortifolioCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
