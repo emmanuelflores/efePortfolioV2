@@ -35,7 +35,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="launchPortifolio:" destination="jpD-AE-jGV" eventType="touchUpInside" id="SNH-9c-Fgf"/>
+                                    <action selector="launchPortifolio:" destination="jpD-AE-jGV" eventType="touchUpInside" id="AwQ-Sb-IsU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUp-gZ-zHG">
