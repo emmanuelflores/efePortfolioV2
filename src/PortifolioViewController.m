@@ -8,6 +8,7 @@
 
 #import "PortifolioViewController.h"
 #import "PortifolioCell.h"
+#import "PortifolioCellView.h"
 
 #define kTableWidth 256
 
@@ -81,12 +82,6 @@
     
     cell.imageView.image = [testImages objectAtIndex:imageIndex++%[testImages count]];
     
-    
-    float c1 = ((rand() % 512) / 512.0) ;
-    
-    cell.contentView.backgroundColor = [UIColor colorWithRed:c1 green:c1 blue:c1 alpha:0.5];
-    
-    
     if (tableView == self.tableView1) {
         cell.textLabel.text = [NSString stringWithFormat:@"t1,%d",indexPath.row];
     } else if (tableView == self.tableView2) {
@@ -100,6 +95,15 @@
 	
     return cell;
 }
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (cell) {
+        cell.backgroundView = [[PortifolioCellView alloc]init];
+        cell.backgroundColor = [UIColor colorWithWhite:1.0 alpha:(rand() % 512 / 512.0)];
+    }
+}
+
+
 
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -168,7 +172,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return kTableWidth * (((rand()*0.5)/RAND_MAX) + 1.0);
+    return kTableWidth * (((rand()*0.5)/RAND_MAX) + 1.1);
 }
 
 
