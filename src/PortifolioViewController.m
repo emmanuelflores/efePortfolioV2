@@ -9,7 +9,7 @@
 #import "PortifolioViewController.h"
 #import "PortifolioCell.h"
 
-#define kTableWidth 200
+#define kTableWidth 256
 
 @interface PortifolioViewController ()
 
@@ -20,14 +20,22 @@
 @synthesize tableView1;
 @synthesize tableView2;
 @synthesize tableView3;
+@synthesize tableView4;
 
-@synthesize testImage;
+@synthesize testImages;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        testImage = [UIImage imageNamed:@"effe.png"];
+        UIImage * image1 = [UIImage imageNamed:@"1.png"];
+        UIImage * image2 = [UIImage imageNamed:@"2.png"];
+        UIImage * image3 = [UIImage imageNamed:@"3.png"];
+        UIImage * image4 = [UIImage imageNamed:@"4.png"];
+        UIImage * image5 = [UIImage imageNamed:@"5.png"];
+        UIImage * image6 = [UIImage imageNamed:@"6.png"];
+        testImages = [[NSArray alloc] initWithObjects:image1,image2,image3,image5,image6,nil];
     }
     return self;
 }
@@ -69,8 +77,15 @@
         cell = [[PortifolioCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"MyIdentifier"];
     }
     
-    cell.imageView.frame = CGRectMake(100, 0, kTableWidth * 0.8, kTableWidth * 0.8);
-    cell.imageView.image = testImage;
+    cell.imageView.frame = CGRectMake(0, 0, kTableWidth * 0.8, kTableWidth * 0.8);
+    
+    cell.imageView.image = [testImages objectAtIndex:imageIndex++%[testImages count]];
+    
+    
+    float c1 = ((rand() % 512) / 512.0) ;
+    
+    cell.contentView.backgroundColor = [UIColor colorWithRed:c1 green:c1 blue:c1 alpha:0.5];
+    
     
     if (tableView == self.tableView1) {
         cell.textLabel.text = [NSString stringWithFormat:@"t1,%d",indexPath.row];
@@ -78,6 +93,8 @@
         cell.textLabel.text = [NSString stringWithFormat:@"t2,%d",indexPath.row];
     } else if (tableView == self.tableView3) {
         cell.textLabel.text = [NSString stringWithFormat:@"t3,%d",indexPath.row];
+    } else if (tableView == self.tableView4) {
+        cell.textLabel.text = [NSString stringWithFormat:@"t4,%d",indexPath.row];
     }
     
 	
@@ -151,7 +168,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return kTableWidth;
+    return kTableWidth * (((rand()*0.5)/RAND_MAX) + 1.0);
 }
 
 
