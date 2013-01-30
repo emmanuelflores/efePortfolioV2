@@ -91,17 +91,16 @@
     } else if (tableView == self.tableView4) {
         cell.textLabel.text = [NSString stringWithFormat:@"t4,%d",indexPath.row];
     }
-    
 	
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (cell) {
-        cell.backgroundView = [[PortifolioCellView alloc]init];
         cell.backgroundColor = [UIColor colorWithWhite:1.0 alpha:(rand() % 512 / 512.0)];
     }
 }
+
 
 
 
@@ -172,7 +171,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return kTableWidth * (((rand()*0.5)/RAND_MAX) + 1.1);
+    return kTableWidth * (1.0 + (rand()%512 / 2048.0));
 }
 
 
