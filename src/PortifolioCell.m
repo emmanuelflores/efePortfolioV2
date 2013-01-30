@@ -9,7 +9,7 @@
 #import "PortifolioCell.h"
 #import "PortifolioCellView.h"
 
-#define kTableImageMargin 64
+#define kTableImageMargin 56
 
 @implementation PortifolioCell
 
