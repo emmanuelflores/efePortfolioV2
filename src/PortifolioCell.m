@@ -7,7 +7,9 @@
 //
 
 #import "PortifolioCell.h"
-#define kTableImageMargin 24
+#import "PortifolioCellView.h"
+
+#define kTableImageMargin 64
 
 @implementation PortifolioCell
 
@@ -15,7 +17,8 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        // Initialization code
+        self.backgroundColor = [UIColor whiteColor];
+        self.backgroundView = [[PortifolioCellView alloc]init];
     }
     return self;
 }
