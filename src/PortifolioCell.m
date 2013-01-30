@@ -28,7 +28,7 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    self.imageView.frame = CGRectMake(120,10,110,110);
+    self.imageView.frame = CGRectMake(80,10,180,180);
 }
 
 @end
