@@ -15,6 +15,7 @@ public:
 	void removeParticles( int amt ); 
 	
 	std::list<ParticleCl*>	mParticles;
+    std::list<float> circleSizes;
     
 };
 

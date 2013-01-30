@@ -12,7 +12,7 @@
 #include "Perlin.h"
 #include "ParticleController.h"
 
-#define NUM_PARTICLES_TO_SPAWN 15 //25
+#define NUM_PARTICLES_TO_SPAWN 10 //10 15 25
 
 class CloudGesture : public ofxiPhoneApp{
 	

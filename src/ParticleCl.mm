@@ -27,7 +27,6 @@ ParticleCl::ParticleCl( ofVec2f loc, ofVec2f vel )
     mAgePercentage = 0;
     mIsDead     = false;
     
-    //mDecay  = Rand::randFloat(0.97f, 0.99f);
     mDecay  = (float)ofRandom(0.97f, 0.99f);
     
 }
@@ -36,8 +35,6 @@ ParticleCl::~ParticleCl(){}
 
 void ParticleCl::update(const Perlin &perlin)
 {
-	// get Perlin noise value based on my location and
-	// elapsed seconds and turn this noise value into an angle.
 	float nX = mLoc.x * 0.005f;
 	float nY = mLoc.y * 0.005f;
 	//float nZ = app::getElapsedSeconds() * 0.1f;
@@ -69,9 +66,10 @@ void ParticleCl::update(const Perlin &perlin)
     }
     
 }
-
+/*
 void ParticleCl::draw()
 {
-	//gl::color( mColor );
-	//gl::drawSolidCircle( mLoc, mRadius );
+	
+    
 }
+*/

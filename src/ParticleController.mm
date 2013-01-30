@@ -2,7 +2,12 @@
 #include "ParticleController.h"
 
 
-ParticleController::ParticleController(){}
+ParticleController::ParticleController(){
+    for (list<ParticleCl*>::iterator p = mParticles.begin(); p != mParticles.end(); ++p ){
+        float value = ofRandom(1.0f,10.0f);
+        circleSizes.push_back(float (value));
+    }
+}
 
 ParticleController::~ParticleController(){}
 
@@ -18,21 +23,23 @@ void ParticleController::update(const Perlin &perlin) {
 }
 
 void ParticleController::draw() {
-    for (list<ParticleCl*>::iterator p = mParticles.begin(); p != mParticles.end(); ++p ) {
-        (*p)->draw();
-    }
+    
+//    for (list<ParticleCl*>::iterator p = mParticles.begin(); p != mParticles.end(); ++p ) {
+//        (*p)->draw();
+//    }
     
     ofNoFill();
-    ofBeginShape();
+    //ofBeginShape();
     
     for (list<ParticleCl*>::iterator p = mParticles.begin(); p != mParticles.end(); ++p ) {
 //        glColor4f( sin( ofGetElapsedTimef() ), 1.0f - (*p)->mYPercentage, 1.0f - (*p)->mXPercentage, 1.0f - (*p)->mAgePercentage);
         //glColor4f( sin( ofGetLastFrameTime() ), 1.0f - p->mYPercentage, 1.0f - p->mXPercentage, 1.0f - p->mAgePercentage);
         glColor4f(0,0,0,0.2f);
-        ofVertex( (*p)->mLoc.x, (*p)->mLoc.y, 0.0f);
+        //ofVertex( (*p)->mLoc.x, (*p)->mLoc.y, 0.0f);
+        ofCircle((*p)->mLoc.x,(*p)->mLoc.y, 5.0f);
     }
     
-    ofEndShape();
+    //ofEndShape();
 }
 
 static ofVec2f randVec2f()
