@@ -16,11 +16,10 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor whiteColor];
+        self.backgroundColor = [UIColor colorWithWhite:(rand() % 512) / 512.0 alpha:1.0];
     }
     return self;
 }
-
 
 - (void)drawRect:(CGRect)rect
 {
@@ -29,15 +28,15 @@
     CGContextSetShadowWithColor(currentContext,
                                 CGSizeMake(1.0f, 1.0f),
                                 10.0f,
-                                [[UIColor grayColor] CGColor]);
+                                [[UIColor colorWithWhite:0.1 alpha:1.0] CGColor]);
     
     CGMutablePathRef path = CGPathCreateMutable();
     
-    CGRect firstRect = CGRectMake(0.0f, 0.0f,kTableWidth-10,kTableWidth-10);
+    CGRect firstRect = CGRectMake(10.0f, 10.0f,kTableWidth-20,kTableWidth-20);
     CGPathAddRect(path,NULL, firstRect);
     
     [[UIColor colorWithWhite:0.5 alpha:1.0] setStroke];
-    CGContextSetLineWidth(currentContext,3.0f);
+    CGContextSetLineWidth(currentContext,1.0f);
     
     CGContextAddPath(currentContext,path);
     
