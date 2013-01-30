@@ -9,7 +9,7 @@
 #import "PortifolioViewController.h"
 #import "PortifolioCell.h"
 
-#define kTableWidth 120
+#define kTableWidth 200
 
 @interface PortifolioViewController ()
 
@@ -73,11 +73,11 @@
     cell.imageView.image = testImage;
     
     if (tableView == self.tableView1) {
-        cell.textLabel.text = [NSString stringWithFormat:@"table 1, item %d",indexPath.row];
+        cell.textLabel.text = [NSString stringWithFormat:@"t1,%d",indexPath.row];
     } else if (tableView == self.tableView2) {
-        cell.textLabel.text = [NSString stringWithFormat:@"table 2, item %d",indexPath.row];
+        cell.textLabel.text = [NSString stringWithFormat:@"t2,%d",indexPath.row];
     } else if (tableView == self.tableView3) {
-        cell.textLabel.text = [NSString stringWithFormat:@"table 3, item %d",indexPath.row];
+        cell.textLabel.text = [NSString stringWithFormat:@"t3,%d",indexPath.row];
     }
     
 	
