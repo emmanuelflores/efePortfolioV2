@@ -7,6 +7,7 @@
 //
 
 #import "PortifolioCell.h"
+#define kTableImageMargin 24
 
 @implementation PortifolioCell
 
@@ -28,7 +29,7 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    self.imageView.frame = CGRectMake(80,10,180,180);
+    self.imageView.frame = CGRectMake(kTableImageMargin,kTableImageMargin,256 - (kTableImageMargin*2), 256 - (kTableImageMargin*2));
 }
 
 @end

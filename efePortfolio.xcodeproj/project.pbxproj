@@ -40,6 +40,12 @@
 		E4296CB816B69C4E00452DE5 /* PortifolioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4296CB616B69C4E00452DE5 /* PortifolioViewController.xib */; };
 		E4296D1216B6C5CD00452DE5 /* effe.png in Resources */ = {isa = PBXBuildFile; fileRef = E4296D1116B6C5CD00452DE5 /* effe.png */; };
 		E434AD5916B7EDF800267144 /* PortifolioCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E434AD5816B7EDF800267144 /* PortifolioCell.m */; };
+		E4975A1216B9466B0042C70D /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = E4975A0E16B9466B0042C70D /* 1.png */; };
+		E4975A1316B9466B0042C70D /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = E4975A0F16B9466B0042C70D /* 2.png */; };
+		E4975A1416B9466B0042C70D /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = E4975A1016B9466B0042C70D /* 3.png */; };
+		E4975A1516B9466B0042C70D /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = E4975A1116B9466B0042C70D /* 4.png */; };
+		E4975A1816B947B00042C70D /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = E4975A1616B947B00042C70D /* 5.png */; };
+		E4975A1916B947B00042C70D /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = E4975A1716B947B00042C70D /* 6.png */; };
 		E4D8936E11527B74007E1F53 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4D8936B11527B74007E1F53 /* main.mm */; };
 		E4F50A5F16B2E90B003A1B8C /* TestObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F50A5E16B2E90A003A1B8C /* TestObjects.m */; };
 /* End PBXBuildFile section */
@@ -110,6 +116,12 @@
 		E4296D1116B6C5CD00452DE5 /* effe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = effe.png; sourceTree = "<group>"; };
 		E434AD5716B7EDF800267144 /* PortifolioCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortifolioCell.h; sourceTree = "<group>"; };
 		E434AD5816B7EDF800267144 /* PortifolioCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortifolioCell.m; sourceTree = "<group>"; };
+		E4975A0E16B9466B0042C70D /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		E4975A0F16B9466B0042C70D /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		E4975A1016B9466B0042C70D /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		E4975A1116B9466B0042C70D /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		E4975A1616B947B00042C70D /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		E4975A1716B947B00042C70D /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
 		E4A823A312561BE3002F86A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E4D8936B11527B74007E1F53 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = main.mm; path = src/main.mm; sourceTree = SOURCE_ROOT; };
 		E4F50A5D16B2E90A003A1B8C /* TestObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObjects.h; sourceTree = "<group>"; };
@@ -151,6 +163,12 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				E4975A0E16B9466B0042C70D /* 1.png */,
+				E4975A0F16B9466B0042C70D /* 2.png */,
+				E4975A1016B9466B0042C70D /* 3.png */,
+				E4975A1116B9466B0042C70D /* 4.png */,
+				E4975A1616B947B00042C70D /* 5.png */,
+				E4975A1716B947B00042C70D /* 6.png */,
 				E4296D1116B6C5CD00452DE5 /* effe.png */,
 				BD4FC28116B1716000EB70BD /* artwork */,
 				E4D8936A11527B74007E1F53 /* src */,
@@ -385,6 +403,12 @@
 				BD8EE4E816B1837300706EC9 /* Infos in Resources */,
 				E4296CB816B69C4E00452DE5 /* PortifolioViewController.xib in Resources */,
 				E4296D1216B6C5CD00452DE5 /* effe.png in Resources */,
+				E4975A1216B9466B0042C70D /* 1.png in Resources */,
+				E4975A1316B9466B0042C70D /* 2.png in Resources */,
+				E4975A1416B9466B0042C70D /* 3.png in Resources */,
+				E4975A1516B9466B0042C70D /* 4.png in Resources */,
+				E4975A1816B947B00042C70D /* 5.png in Resources */,
+				E4975A1916B947B00042C70D /* 6.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
