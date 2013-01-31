@@ -46,7 +46,6 @@
 		E4975A1516B9466B0042C70D /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = E4975A1116B9466B0042C70D /* 4.png */; };
 		E4975A1816B947B00042C70D /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = E4975A1616B947B00042C70D /* 5.png */; };
 		E4975A1916B947B00042C70D /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = E4975A1716B947B00042C70D /* 6.png */; };
-		E4975A7A16B965AC0042C70D /* PortifolioCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4975A7916B965AC0042C70D /* PortifolioCellView.m */; };
 		E4D8936E11527B74007E1F53 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4D8936B11527B74007E1F53 /* main.mm */; };
 		E4F50A5F16B2E90B003A1B8C /* TestObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F50A5E16B2E90A003A1B8C /* TestObjects.m */; };
 /* End PBXBuildFile section */
@@ -123,8 +122,6 @@
 		E4975A1116B9466B0042C70D /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
 		E4975A1616B947B00042C70D /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
 		E4975A1716B947B00042C70D /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
-		E4975A7816B965AC0042C70D /* PortifolioCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortifolioCellView.h; sourceTree = "<group>"; };
-		E4975A7916B965AC0042C70D /* PortifolioCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortifolioCellView.m; sourceTree = "<group>"; };
 		E4A823A312561BE3002F86A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E4D8936B11527B74007E1F53 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = main.mm; path = src/main.mm; sourceTree = SOURCE_ROOT; };
 		E4F50A5D16B2E90A003A1B8C /* TestObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObjects.h; sourceTree = "<group>"; };
@@ -261,8 +258,6 @@
 				E4296CB616B69C4E00452DE5 /* PortifolioViewController.xib */,
 				E434AD5716B7EDF800267144 /* PortifolioCell.h */,
 				E434AD5816B7EDF800267144 /* PortifolioCell.m */,
-				E4975A7816B965AC0042C70D /* PortifolioCellView.h */,
-				E4975A7916B965AC0042C70D /* PortifolioCellView.m */,
 			);
 			name = viewcontrollers;
 			sourceTree = "<group>";
@@ -464,7 +459,6 @@
 				E4F50A5F16B2E90B003A1B8C /* TestObjects.m in Sources */,
 				E4296CB716B69C4E00452DE5 /* PortifolioViewController.m in Sources */,
 				E434AD5916B7EDF800267144 /* PortifolioCell.m in Sources */,
-				E4975A7A16B965AC0042C70D /* PortifolioCellView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
