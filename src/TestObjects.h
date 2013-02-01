@@ -14,5 +14,7 @@
 
 @property(nonatomic,strong)NSString *name;
 @property(nonatomic,strong)NSString *surname;
+@property (nonatomic) int heigth;
+@property (nonatomic,retain) UIImage * image;
 
 @end

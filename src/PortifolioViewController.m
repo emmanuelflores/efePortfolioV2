@@ -10,7 +10,11 @@
 #import "PortifolioCell.h"
 #import "PortifolioCellView.h"
 
+#import "testObjectStore.h"
+#import "TestObjects.h"
+
 #define kTableWidth 256
+#define kNumberOfItems 30
 
 @interface PortifolioViewController ()
 
@@ -37,6 +41,15 @@
         UIImage * image5 = [UIImage imageNamed:@"5.png"];
         UIImage * image6 = [UIImage imageNamed:@"6.png"];
         testImages = [[NSArray alloc] initWithObjects:image1,image2,image3,image5,image6,nil];
+        
+        NSMutableArray * allItems = [[TestObjectStore defaultStore] allItems];
+        
+        for (int i; i < kNumberOfItems ; i++ ) {
+            TestObjects * myObject = [[TestObjects alloc]init];
+            myObject.heigth = kTableWidth * (1.0 + (rand()%512 / 2048.0));
+            myObject.image = [testImages objectAtIndex:rand() % [testImages count]];
+            [allItems addObject:myObject];
+        }
     }
     return self;
 }
@@ -80,17 +93,7 @@
     
     cell.imageView.frame = CGRectMake(0, 0, kTableWidth * 0.8, kTableWidth * 0.8);
     
-    cell.imageView.image = [testImages objectAtIndex:imageIndex++%[testImages count]];
-    
-    if (tableView == self.tableView1) {
-        cell.textLabel.text = [NSString stringWithFormat:@"t1,%d",indexPath.row];
-    } else if (tableView == self.tableView2) {
-        cell.textLabel.text = [NSString stringWithFormat:@"t2,%d",indexPath.row];
-    } else if (tableView == self.tableView3) {
-        cell.textLabel.text = [NSString stringWithFormat:@"t3,%d",indexPath.row];
-    } else if (tableView == self.tableView4) {
-        cell.textLabel.text = [NSString stringWithFormat:@"t4,%d",indexPath.row];
-    }
+    cell.imageView.image = [TestObjectStore defaultStore];
 	
     return cell;
 }
@@ -171,7 +174,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return kTableWidth * (1.0 + (rand()%512 / 2048.0));
+    return [[[[TestObjectStore defaultStore] allItems] objectAtIndex:indexPath.row] heigth];
 }
 
 
