@@ -58,6 +58,7 @@
 		E4975A1916B947B00042C70D /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = E4975A1716B947B00042C70D /* 6.png */; };
 		E4975A7A16B965AC0042C70D /* PortifolioCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4975A7916B965AC0042C70D /* PortifolioCellView.m */; };
 		E4B894C816BFFE0400A496B0 /* InfoLog in Resources */ = {isa = PBXBuildFile; fileRef = BD8EE4E716B1837300706EC9 /* InfoLog */; };
+		E4B894CD16C00DE800A496B0 /* proximityBoxes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDE30D1816B2EE95002DA270 /* proximityBoxes.cpp */; };
 		E4D8936E11527B74007E1F53 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4D8936B11527B74007E1F53 /* main.mm */; };
 		E4F50A5F16B2E90B003A1B8C /* TestObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F50A5E16B2E90A003A1B8C /* TestObjects.m */; };
 /* End PBXBuildFile section */
@@ -561,6 +562,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4B894CD16C00DE800A496B0 /* proximityBoxes.cpp in Sources */,
 				E4D8936E11527B74007E1F53 /* main.mm in Sources */,
 				914F466616AC3E1C00786D52 /* AppDelegate.mm in Sources */,
 				914F466C16AC3E2700786D52 /* ExampleOFApp.mm in Sources */,
