@@ -37,14 +37,14 @@
         UIImage * image1 = [UIImage imageNamed:@"1.png"];
         UIImage * image2 = [UIImage imageNamed:@"2.png"];
         UIImage * image3 = [UIImage imageNamed:@"3.png"];
-        UIImage * image4 = [UIImage imageNamed:@"4.png"];
         UIImage * image5 = [UIImage imageNamed:@"5.png"];
         UIImage * image6 = [UIImage imageNamed:@"6.png"];
+        
         testImages = [[NSArray alloc] initWithObjects:image1,image2,image3,image5,image6,nil];
         
         NSMutableArray * allItems = [[TestObjectStore defaultStore] allItems];
         
-        for (int i; i < kNumberOfItems ; i++ ) {
+        for (int i = 0; i < kNumberOfItems ; i++ ) {
             TestObjects * myObject = [[TestObjects alloc]init];
             myObject.heigth = kTableWidth * (1.0 + (rand()%512 / 2048.0));
             myObject.image = [testImages objectAtIndex:rand() % [testImages count]];
@@ -85,17 +85,24 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyIdentifier"];
+    PortifolioCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyIdentifier"];
     if (cell == nil) {
-        
         cell = [[PortifolioCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"MyIdentifier"];
     }
     
+    int collumn;
+    if (tableView == tableView1) collumn = 0;
+    else if (tableView == tableView2) collumn = 1;
+    else if (tableView == tableView3) collumn = 2;
+    else if (tableView == tableView4) collumn = 3;
+    
+    cell.tableIndex = indexPath.row;
+    
     cell.imageView.frame = CGRectMake(0, 0, kTableWidth * 0.8, kTableWidth * 0.8);
     
-    cell.imageView.image = [TestObjectStore defaultStore];
+    cell.imageView.image = [[[[TestObjectStore defaultStore] allItems] objectAtIndex:indexPath.row + offset] image];
 	
-    return cell;
+    return (UITableViewCell *) cell;
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -174,6 +181,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     return [[[[TestObjectStore defaultStore] allItems] objectAtIndex:indexPath.row] heigth];
 }
 

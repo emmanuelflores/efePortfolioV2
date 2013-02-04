@@ -27,6 +27,16 @@
     return [self defaultStore];
 }
 
+- (NSMutableArray *)allItemsFromRow:(int)rowNumber {
+    NSMutableArray * items = [[NSMutableArray alloc]init];
+    for (int i = 0; i < [[self allItems] count]; i++) {
+        if ([[allItems objectAtIndex:i] row] == rowNumber) {
+            [items addObject:[allItems objectAtIndex:i]];
+        }
+    }
+    return items;
+}
+
 - (id)init
 {
     self = [super init];
@@ -37,5 +47,6 @@
     }
     return self;
 }
+
 
 @end

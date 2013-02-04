@@ -18,4 +18,6 @@
 
 + (TestObjectStore *)defaultStore;
 
++ (NSArray *)allItemsFromRow:(int)rowNumber;
+
 @end

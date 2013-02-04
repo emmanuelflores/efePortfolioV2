@@ -7,10 +7,14 @@
 //
 
 #import "PortifolioCellView.h"
+#import "TestObjectStore.h"
+#import "TestObjects.h"
 
 #define kTableWidth 256
 
 @implementation PortifolioCellView
+
+@synthesize tableIndex;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -32,7 +36,7 @@
     
     CGMutablePathRef path = CGPathCreateMutable();
     
-    CGRect firstRect = CGRectMake(5.0f, 5.0f,kTableWidth-10,kTableWidth-10);
+    CGRect firstRect = CGRectMake(5.0f, 5.0f,kTableWidth-10,[[[[TestObjectStore defaultStore] allItems] objectAtIndex:tableIndex] heigth] - 10);
     CGPathAddRect(path,NULL, firstRect);
     
     [[UIColor colorWithWhite:0.5 alpha:1.0] setStroke];
