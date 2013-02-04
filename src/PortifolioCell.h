@@ -10,4 +10,6 @@
 
 @interface PortifolioCell : UITableViewCell
 
+@property (nonatomic) int tableIndex;
+
 @end

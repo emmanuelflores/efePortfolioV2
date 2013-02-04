@@ -40,6 +40,7 @@
 		E4296CB816B69C4E00452DE5 /* PortifolioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4296CB616B69C4E00452DE5 /* PortifolioViewController.xib */; };
 		E4296D1216B6C5CD00452DE5 /* effe.png in Resources */ = {isa = PBXBuildFile; fileRef = E4296D1116B6C5CD00452DE5 /* effe.png */; };
 		E434AD5916B7EDF800267144 /* PortifolioCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E434AD5816B7EDF800267144 /* PortifolioCell.m */; };
+		E448D91A16BBE65500140CAF /* TestObjectStore.m in Sources */ = {isa = PBXBuildFile; fileRef = E448D91916BBE65500140CAF /* TestObjectStore.m */; };
 		E4975A1216B9466B0042C70D /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = E4975A0E16B9466B0042C70D /* 1.png */; };
 		E4975A1316B9466B0042C70D /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = E4975A0F16B9466B0042C70D /* 2.png */; };
 		E4975A1416B9466B0042C70D /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = E4975A1016B9466B0042C70D /* 3.png */; };
@@ -120,6 +121,8 @@
 		E4296D1116B6C5CD00452DE5 /* effe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = effe.png; sourceTree = "<group>"; };
 		E434AD5716B7EDF800267144 /* PortifolioCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortifolioCell.h; sourceTree = "<group>"; };
 		E434AD5816B7EDF800267144 /* PortifolioCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortifolioCell.m; sourceTree = "<group>"; };
+		E448D91816BBE65500140CAF /* TestObjectStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObjectStore.h; sourceTree = "<group>"; };
+		E448D91916BBE65500140CAF /* TestObjectStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObjectStore.m; sourceTree = "<group>"; };
 		E4975A0E16B9466B0042C70D /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		E4975A0F16B9466B0042C70D /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		E4975A1016B9466B0042C70D /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
@@ -319,6 +322,8 @@
 			children = (
 				E4F50A5D16B2E90A003A1B8C /* TestObjects.h */,
 				E4F50A5E16B2E90A003A1B8C /* TestObjects.m */,
+				E448D91816BBE65500140CAF /* TestObjectStore.h */,
+				E448D91916BBE65500140CAF /* TestObjectStore.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -476,6 +481,10 @@
 <<<<<<< HEAD
 =======
 				E4975A7A16B965AC0042C70D /* PortifolioCellView.m in Sources */,
+<<<<<<< HEAD
+>>>>>>> 4Rows
+=======
+				E448D91A16BBE65500140CAF /* TestObjectStore.m in Sources */,
 >>>>>>> 4Rows
 			);
 			runOnlyForDeploymentPostprocessing = 0;

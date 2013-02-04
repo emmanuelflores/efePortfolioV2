@@ -12,5 +12,8 @@
 
 @synthesize name;
 @synthesize surname;
+@synthesize heigth;
+@synthesize image;
+@synthesize row;
 
 @end
