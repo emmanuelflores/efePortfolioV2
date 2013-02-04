@@ -1,22 +1,24 @@
-#pragma once
+//
+//  CloudGesture.h
+//  efePortfolio
+//
+//  Created by efe on 1/25/13.
+//
+//
 
 #include "ofMain.h"
 #include "ofxiPhone.h"
 #include "ofxiPhoneExtras.h"
-#include "Particle.h"
-#include <vector>
+#include "Perlin.h"
+#include "ParticleController.h"
 
-static const unsigned int AMOUNT=600;//300 350
-static const unsigned int TRACE_LENGTH=4;//5 or less
+#define NUM_PARTICLES_TO_SPAWN 10 //10 15 25
 
-class FioritoAttractor : public ofxiPhoneApp {
+class CloudGesture : public ofxiPhoneApp{
 	
 public:
-    
-    FioritoAttractor();
-    virtual ~FioritoAttractor();
-    
-public:
+    CloudGesture();
+    ~CloudGesture();
     void setup();
     void update();
     void draw();
@@ -28,24 +30,20 @@ public:
     void touchDoubleTap(ofTouchEventArgs & touch);
     void touchCancelled(ofTouchEventArgs & touch);
     
+    void mouseMoved(int x, int y );
+    
     void lostFocus();
     void gotFocus();
     void gotMemoryWarning();
     void deviceOrientationChanged(int newOrientation);
     
-    void drawBackground();
+protected:
+    ofVec2f mMouseLoc;
+	ofVec2f mMouseVel;
+    bool mIsPressed;
     
-    std::vector<Particle*> dot;
-    typedef std::vector<Particle*>::iterator pIter;
+    Perlin mPerlin;
     
-    int     counter;
-    
-    float sTreshold;
-    float accx,accy;
-    int trig;
-    int startshake;
-    int shake;
-    int shakemaxnumber ;
-    int timeofgesture;
+    ParticleController mParticleController;
     
 };

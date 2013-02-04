@@ -1,10 +1,22 @@
-#import "ExampleOFAppViewController.h"
+//
+//  BoxesViewController.m
+//  efePortfolio
+//
+//  Created by efe on 1/25/13.
+//
+//
+
+#import "BoxesViewController.h"
 #import "ofxiPhoneExtras.h"
 
-@implementation ExampleOFAppViewController
+@interface BoxesViewController (PrivateMethods)
+
+@end
+
+@implementation BoxesViewController
 
 - (id) initWithFrame:(CGRect)frame app:(ofxiPhoneApp *)app {
-
+    
     //ofSetOrientation(OF_ORIENTATION_90_RIGHT);
     ofxiPhoneGetOFWindow()->setOrientation( OF_ORIENTATION_90_RIGHT );   //-- default portait orientation.
     

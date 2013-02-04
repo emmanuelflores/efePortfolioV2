@@ -1,19 +1,19 @@
 //
-//  FioritoViewController.m
+//  CloudViewController.m
 //  efePortfolio
 //
-//  Created by efe on 1/24/13.
+//  Created by efe on 1/25/13.
 //
 //
 
-#import "FioritoViewController.h"
+#import "CloudViewController.h"
 #import "ofxiPhoneExtras.h"
 
-@interface FioritoViewController (PrivateMethods)
+@interface CloudViewController (PrivateMethods)
 
 @end
 
-@implementation FioritoViewController
+@implementation CloudViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,7 +30,6 @@
     
     return self = [super initWithFrame:frame app:app];
 }
-
 
 - (void)viewDidLoad
 {

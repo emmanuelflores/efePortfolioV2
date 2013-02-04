@@ -3,6 +3,10 @@
 #import "ExampleOFApp.h"
 #import "FioritoViewController.h"
 #import "FioritoAttractor.h"
+#import "CloudViewController.h"
+#import "CloudGesture.h"
+#import "BoxesViewController.h"
+#import "BoxesApp.h"
 
 #import "PortifolioViewController.h"
 
@@ -12,7 +16,7 @@
 
 @implementation LaunchAppViewController
 
-#pragma mark - IB
+#pragma mark - Buttons to access the GL scenes
 
 - (IBAction)launchAppPressed:(id)sender {
     
@@ -27,15 +31,23 @@
     // orientation
     CGRect mainScreenFrame = [[UIScreen mainScreen] bounds];
     CGRect frame = mainScreenFrame;
-//    if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
-//        self.interfaceOrientation == UIInterfaceOrientationLandscapeRight) {
-//        frame.size.width = mainScreenFrame.size.height;
-//        frame.size.height = mainScreenFrame.size.width;
-//    }
+    if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
+        self.interfaceOrientation == UIInterfaceOrientationLandscapeRight) {
+        frame.size.width = mainScreenFrame.size.height;
+        frame.size.height = mainScreenFrame.size.width;
+    }
     
-    // create the app
+    //push viewcontroller
     ExampleOFAppViewController *exampleOFAppViewController = [[ExampleOFAppViewController alloc] initWithFrame:frame app:exampleOFApp];
-    // add it
+    CATransition* transition = [CATransition animation];
+    transition.duration = 0.8;
+    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    transition.type = kCATransitionFade;
+    transition.subtype = kCATransitionFromTop;
+    //kCATransitionMoveIn; //, kCATransitionPush, kCATransitionReveal, kCATransitionFade
+    //transition.subtype = kCATransitionFromTop; //kCATransitionFromLeft, kCATransitionFromRight, kCATransitionFromTop, kCATransitionFromBottom
+    [self.navigationController.view.layer addAnimation:transition forKey:nil];
+    //[[self navigationController] popViewControllerAnimated:NO];
     [self.navigationController pushViewController:exampleOFAppViewController animated:YES];
 }
 
@@ -44,17 +56,61 @@
     
     CGRect mainScreenFrame = [[UIScreen mainScreen]bounds];
     CGRect frame = mainScreenFrame;
+    if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
+        self.interfaceOrientation == UIInterfaceOrientationLandscapeRight) {
+        frame.size.width = mainScreenFrame.size.height;
+        frame.size.height = mainScreenFrame.size.width;
+    }
     
-    //create the app
     FioritoViewController *fvc = [[FioritoViewController alloc]initWithFrame:frame app:fioritoApp];
-    //add it
+//    CATransition* transition = [CATransition animation];
+//    transition.duration = 0.8;
+//    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+//    transition.type = kCATransitionFade;
+//    transition.subtype = kCATransitionFromTop;
+//    [self.navigationController.view.layer addAnimation:transition forKey:nil];
     [self.navigationController pushViewController:fvc animated:YES];
 }
 
+<<<<<<< HEAD
 -(IBAction)launchPortifolio:(id)sender
 {
     PortifolioViewController *portifolioVC = [[PortifolioViewController alloc]init];
     [self.navigationController pushViewController:portifolioVC animated:YES];
+=======
+-(void)launchCloudView:(id)sender{
+    CloudGesture *cloudApp = new CloudGesture();
+    
+    CGRect mainScreenFrame = [[UIScreen mainScreen]bounds];
+    CGRect frame = mainScreenFrame;
+    if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
+        self.interfaceOrientation == UIInterfaceOrientationLandscapeRight) {
+        frame.size.width = mainScreenFrame.size.height;
+        frame.size.height = mainScreenFrame.size.width;
+    }
+    
+    //create the app
+    CloudViewController *cvc = [[CloudViewController alloc]initWithFrame:frame app:cloudApp];
+    //add it
+    [self.navigationController pushViewController:cvc animated:YES];
+}
+
+-(void)launchBoxesApp:(id)sender{
+    BoxesApp *boxApp = new BoxesApp();
+    
+    CGRect mainScreenFrame = [[UIScreen mainScreen]bounds];
+    CGRect frame = mainScreenFrame;
+    if (self.interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
+        self.interfaceOrientation == UIInterfaceOrientationLandscapeRight) {
+        frame.size.width = mainScreenFrame.size.height;
+        frame.size.height = mainScreenFrame.size.width;
+    }
+    
+    //create the app
+    BoxesViewController *cvc = [[BoxesViewController alloc]initWithFrame:frame app:boxApp];
+    //add it
+    [self.navigationController pushViewController:cvc animated:YES];
+>>>>>>> efeOld/master
 }
 
 #pragma mark - Life Cycle

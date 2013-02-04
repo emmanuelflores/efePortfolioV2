@@ -13,6 +13,7 @@ ExampleOFApp::~ExampleOFApp () {
 //--------------------------------------------------------------
 void ExampleOFApp::setup() {
 	ofBackground(127);
+    ofSetOrientation(OF_ORIENTATION_90_RIGHT);
     ofSetLogLevel(OF_LOG_VERBOSE);
 
     ofLogVerbose() << "Size is " << ofGetWidth() << "x" << ofGetHeight();
