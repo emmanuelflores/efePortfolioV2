@@ -72,12 +72,13 @@
     [self.navigationController pushViewController:fvc animated:YES];
 }
 
-<<<<<<< HEAD
+
 -(IBAction)launchPortifolio:(id)sender
 {
     PortifolioViewController *portifolioVC = [[PortifolioViewController alloc]init];
     [self.navigationController pushViewController:portifolioVC animated:YES];
-=======
+}
+
 -(void)launchCloudView:(id)sender{
     CloudGesture *cloudApp = new CloudGesture();
     
@@ -110,7 +111,7 @@
     BoxesViewController *cvc = [[BoxesViewController alloc]initWithFrame:frame app:boxApp];
     //add it
     [self.navigationController pushViewController:cvc animated:YES];
->>>>>>> efeOld/master
+
 }
 
 #pragma mark - Life Cycle

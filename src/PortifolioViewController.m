@@ -100,7 +100,7 @@
     
     cell.imageView.frame = CGRectMake(0, 0, kTableWidth * 0.8, kTableWidth * 0.8);
     
-    cell.imageView.image = [[[[TestObjectStore defaultStore] allItems] objectAtIndex:indexPath.row + offset] image];
+    cell.imageView.image = [[[[TestObjectStore defaultStore] allItems] objectAtIndex:indexPath.row] image];
 	
     return (UITableViewCell *) cell;
 }

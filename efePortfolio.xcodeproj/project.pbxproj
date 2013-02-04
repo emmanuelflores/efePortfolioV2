@@ -35,10 +35,8 @@
 		BD699D4B16B2A2840028B5E0 /* ParticleController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BD699D4A16B2A2840028B5E0 /* ParticleController.mm */; };
 		BD699D4E16B2A2F90028B5E0 /* CloudViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BD699D4D16B2A2F90028B5E0 /* CloudViewController.mm */; };
 		BD699D5116B2A3B00028B5E0 /* CloudGesture.mm in Sources */ = {isa = PBXBuildFile; fileRef = BD699D4F16B2A3AF0028B5E0 /* CloudGesture.mm */; };
-		BD8EE4E816B1837300706EC9 /* InfoLog in Resources */ = {isa = PBXBuildFile; fileRef = BD8EE4E716B1837300706EC9 /* InfoLog */; };
 		BDE30D1416B2EDF7002DA270 /* BoxesViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BDE30D1316B2EDF7002DA270 /* BoxesViewController.mm */; };
 		BDE30D1716B2EE69002DA270 /* BoxesApp.mm in Sources */ = {isa = PBXBuildFile; fileRef = BDE30D1516B2EE68002DA270 /* BoxesApp.mm */; };
-		BDE30D1A16B2EE95002DA270 /* proximityBoxes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDE30D1816B2EE95002DA270 /* proximityBoxes.cpp */; };
 		BDEACDBE16B189FD007FCF96 /* FioritoAttractor.mm in Sources */ = {isa = PBXBuildFile; fileRef = BDEACDBC16B189FD007FCF96 /* FioritoAttractor.mm */; };
 		BDEACDC316B18A97007FCF96 /* Attractor.mm in Sources */ = {isa = PBXBuildFile; fileRef = BDEACDC116B18A97007FCF96 /* Attractor.mm */; };
 		BDEACDC616B18D00007FCF96 /* FioritoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BDEACDC516B18D00007FCF96 /* FioritoViewController.mm */; };
@@ -58,9 +56,8 @@
 		E4975A1516B9466B0042C70D /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = E4975A1116B9466B0042C70D /* 4.png */; };
 		E4975A1816B947B00042C70D /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = E4975A1616B947B00042C70D /* 5.png */; };
 		E4975A1916B947B00042C70D /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = E4975A1716B947B00042C70D /* 6.png */; };
-
 		E4975A7A16B965AC0042C70D /* PortifolioCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4975A7916B965AC0042C70D /* PortifolioCellView.m */; };
-
+		E4B894C816BFFE0400A496B0 /* InfoLog in Resources */ = {isa = PBXBuildFile; fileRef = BD8EE4E716B1837300706EC9 /* InfoLog */; };
 		E4D8936E11527B74007E1F53 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4D8936B11527B74007E1F53 /* main.mm */; };
 		E4F50A5F16B2E90B003A1B8C /* TestObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F50A5E16B2E90A003A1B8C /* TestObjects.m */; };
 /* End PBXBuildFile section */
@@ -160,10 +157,8 @@
 		E4975A1116B9466B0042C70D /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
 		E4975A1616B947B00042C70D /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
 		E4975A1716B947B00042C70D /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
-
 		E4975A7816B965AC0042C70D /* PortifolioCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortifolioCellView.h; sourceTree = "<group>"; };
 		E4975A7916B965AC0042C70D /* PortifolioCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortifolioCellView.m; sourceTree = "<group>"; };
-
 		E4A823A312561BE3002F86A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E4D8936B11527B74007E1F53 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = main.mm; path = src/main.mm; sourceTree = SOURCE_ROOT; };
 		E4F50A5D16B2E90A003A1B8C /* TestObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObjects.h; sourceTree = "<group>"; };
@@ -206,7 +201,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-
 				E4975A0E16B9466B0042C70D /* 1.png */,
 				E4975A0F16B9466B0042C70D /* 2.png */,
 				E4975A1016B9466B0042C70D /* 3.png */,
@@ -214,10 +208,8 @@
 				E4975A1616B947B00042C70D /* 5.png */,
 				E4975A1716B947B00042C70D /* 6.png */,
 				E4296D1116B6C5CD00452DE5 /* effe.png */,
-
 				BD8EE4E716B1837300706EC9 /* InfoLog */,
 				BD667C2E16B2AE53005F959B /* test72.png */,
-
 				BD4FC28116B1716000EB70BD /* artwork */,
 				E4D8936A11527B74007E1F53 /* src */,
 				BB24E1F710DAA51900E9C588 /* openFrameworks */,
@@ -300,7 +292,6 @@
 		BD4FC28416B175AB00EB70BD /* viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
-
 				E4296CB416B69C4E00452DE5 /* PortifolioViewController.h */,
 				E4296CB516B69C4E00452DE5 /* PortifolioViewController.m */,
 				E4296CB616B69C4E00452DE5 /* PortifolioViewController.xib */,
@@ -308,11 +299,8 @@
 				E434AD5816B7EDF800267144 /* PortifolioCell.m */,
 				E4975A7816B965AC0042C70D /* PortifolioCellView.h */,
 				E4975A7916B965AC0042C70D /* PortifolioCellView.m */,
-
-
 				BD699D2E16B27CF20028B5E0 /* SimplePopoverView.h */,
 				BD699D2F16B27CF20028B5E0 /* SimplePopoverView.m */,
-
 			);
 			name = viewcontrollers;
 			sourceTree = "<group>";
@@ -407,13 +395,10 @@
 		E4D8936A11527B74007E1F53 /* src */ = {
 			isa = PBXGroup;
 			children = (
-
 				E4DCA82E16B2B1B90011BE2A /* Data */,
 				BD4FC28416B175AB00EB70BD /* viewcontrollers */,
-
 				BD667C6416B2CFF1005F959B /* vimeoLoader */,
 				BD667C3916B2C43D005F959B /* webConnection */,
-
 				E4D8936B11527B74007E1F53 /* main.mm */,
 				BD4FC28216B1718900EB70BD /* iPadStoryboard.storyboard */,
 				914F466216AC3E1C00786D52 /* AppDelegate.h */,
@@ -477,7 +462,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0460;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "efePortfolio" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -527,9 +512,7 @@
 				BD4FC2BC16B17AD500EB70BD /* Default-Portrait~ipad.png in Resources */,
 				BD4FC2BE16B17BEE00EB70BD /* Default-Landscape@2x~ipad.png in Resources */,
 				BD4FC2C016B17BF200EB70BD /* Default-Landscape~ipad.png in Resources */,
-
-				BD4FC2C216B182B000EB70BD /* test72.png in Resources */,
-				BD8EE4E816B1837300706EC9 /* Infos in Resources */,
+				E4B894C816BFFE0400A496B0 /* InfoLog in Resources */,
 				E4296CB816B69C4E00452DE5 /* PortifolioViewController.xib in Resources */,
 				E4296D1216B6C5CD00452DE5 /* effe.png in Resources */,
 				E4975A1216B9466B0042C70D /* 1.png in Resources */,
@@ -538,10 +521,7 @@
 				E4975A1516B9466B0042C70D /* 4.png in Resources */,
 				E4975A1816B947B00042C70D /* 5.png in Resources */,
 				E4975A1916B947B00042C70D /* 6.png in Resources */,
-
-				BD8EE4E816B1837300706EC9 /* InfoLog in Resources */,
 				BD667C2F16B2AE53005F959B /* test72.png in Resources */,
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,11 +572,8 @@
 				E4F50A5F16B2E90B003A1B8C /* TestObjects.m in Sources */,
 				E4296CB716B69C4E00452DE5 /* PortifolioViewController.m in Sources */,
 				E434AD5916B7EDF800267144 /* PortifolioCell.m in Sources */,
-
 				E4975A7A16B965AC0042C70D /* PortifolioCellView.m in Sources */,
-
 				E448D91A16BBE65500140CAF /* TestObjectStore.m in Sources */,
-
 				BD699D3016B27CF20028B5E0 /* SimplePopoverView.m in Sources */,
 				BD699D4516B2A1CE0028B5E0 /* ParticleCl.mm in Sources */,
 				BD699D4816B2A2080028B5E0 /* Perlin.mm in Sources */,
@@ -606,7 +583,6 @@
 				BD667C6016B2CD8F005F959B /* Reachability.m in Sources */,
 				BDE30D1416B2EDF7002DA270 /* BoxesViewController.mm in Sources */,
 				BDE30D1716B2EE69002DA270 /* BoxesApp.mm in Sources */,
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
