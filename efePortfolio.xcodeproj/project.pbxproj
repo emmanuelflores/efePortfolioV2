@@ -40,6 +40,12 @@
 		BDEACDBE16B189FD007FCF96 /* FioritoAttractor.mm in Sources */ = {isa = PBXBuildFile; fileRef = BDEACDBC16B189FD007FCF96 /* FioritoAttractor.mm */; };
 		BDEACDC316B18A97007FCF96 /* Attractor.mm in Sources */ = {isa = PBXBuildFile; fileRef = BDEACDC116B18A97007FCF96 /* Attractor.mm */; };
 		BDEACDC616B18D00007FCF96 /* FioritoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BDEACDC516B18D00007FCF96 /* FioritoViewController.mm */; };
+		BDFDA92516C287840039626D /* ReachabilityTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFDA92316C287840039626D /* ReachabilityTestViewController.m */; };
+		BDFDA92616C287840039626D /* ReachabilityTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDFDA92416C287840039626D /* ReachabilityTestViewController.xib */; };
+		BDFDA92916C288060039626D /* TextView.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFDA92816C288060039626D /* TextView.m */; };
+		BDFDA92C16C288120039626D /* IdleView.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFDA92B16C288120039626D /* IdleView.m */; };
+		BDFDA93116C28A2A0039626D /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFDA92F16C28A2A0039626D /* InfoViewController.m */; };
+		BDFDA93216C28A2A0039626D /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDFDA93016C28A2A0039626D /* InfoViewController.xib */; };
 		E41D400B13B39D2100A75A5D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41D400613B39D2100A75A5D /* AVFoundation.framework */; };
 		E41D400C13B39D2100A75A5D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41D400713B39D2100A75A5D /* CoreMedia.framework */; };
 		E41D400D13B39D2100A75A5D /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41D400813B39D2100A75A5D /* CoreVideo.framework */; };
@@ -137,6 +143,16 @@
 		BDEACDC216B18A97007FCF96 /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
 		BDEACDC416B18D00007FCF96 /* FioritoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FioritoViewController.h; sourceTree = "<group>"; };
 		BDEACDC516B18D00007FCF96 /* FioritoViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FioritoViewController.mm; sourceTree = "<group>"; };
+		BDFDA92216C287840039626D /* ReachabilityTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachabilityTestViewController.h; sourceTree = "<group>"; };
+		BDFDA92316C287840039626D /* ReachabilityTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachabilityTestViewController.m; sourceTree = "<group>"; };
+		BDFDA92416C287840039626D /* ReachabilityTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReachabilityTestViewController.xib; sourceTree = "<group>"; };
+		BDFDA92716C288060039626D /* TextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextView.h; sourceTree = "<group>"; };
+		BDFDA92816C288060039626D /* TextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextView.m; sourceTree = "<group>"; };
+		BDFDA92A16C288120039626D /* IdleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdleView.h; sourceTree = "<group>"; };
+		BDFDA92B16C288120039626D /* IdleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdleView.m; sourceTree = "<group>"; };
+		BDFDA92E16C28A2A0039626D /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		BDFDA92F16C28A2A0039626D /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		BDFDA93016C28A2A0039626D /* InfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
 		E41D3ED613B38FB500A75A5D /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
 		E41D3EE513B3906D00A75A5D /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/ios/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
 		E41D400613B39D2100A75A5D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -202,13 +218,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				E4975A0E16B9466B0042C70D /* 1.png */,
-				E4975A0F16B9466B0042C70D /* 2.png */,
-				E4975A1016B9466B0042C70D /* 3.png */,
-				E4975A1116B9466B0042C70D /* 4.png */,
-				E4975A1616B947B00042C70D /* 5.png */,
-				E4975A1716B947B00042C70D /* 6.png */,
-				E4296D1116B6C5CD00452DE5 /* effe.png */,
 				BD8EE4E716B1837300706EC9 /* InfoLog */,
 				BD667C2E16B2AE53005F959B /* test72.png */,
 				BD4FC28116B1716000EB70BD /* artwork */,
@@ -280,6 +289,7 @@
 		BD4FC28116B1716000EB70BD /* artwork */ = {
 			isa = PBXGroup;
 			children = (
+				BDFDA92116C286BF0039626D /* images-table-test */,
 				BD4FC2BF16B17BF200EB70BD /* Default-Landscape~ipad.png */,
 				BD4FC2BD16B17BEE00EB70BD /* Default-Landscape@2x~ipad.png */,
 				BD4FC2BB16B17AD500EB70BD /* Default-Portrait~ipad.png */,
@@ -311,6 +321,16 @@
 			children = (
 				BD667C5E16B2CD8F005F959B /* Reachability.h */,
 				BD667C5F16B2CD8F005F959B /* Reachability.m */,
+				BDFDA92216C287840039626D /* ReachabilityTestViewController.h */,
+				BDFDA92316C287840039626D /* ReachabilityTestViewController.m */,
+				BDFDA92416C287840039626D /* ReachabilityTestViewController.xib */,
+				BDFDA92716C288060039626D /* TextView.h */,
+				BDFDA92816C288060039626D /* TextView.m */,
+				BDFDA92A16C288120039626D /* IdleView.h */,
+				BDFDA92B16C288120039626D /* IdleView.m */,
+				BDFDA92E16C28A2A0039626D /* InfoViewController.h */,
+				BDFDA92F16C28A2A0039626D /* InfoViewController.m */,
+				BDFDA93016C28A2A0039626D /* InfoViewController.xib */,
 			);
 			name = webConnection;
 			sourceTree = "<group>";
@@ -383,6 +403,20 @@
 				BDEACDC216B18A97007FCF96 /* Particle.h */,
 			);
 			name = fioritoApp;
+			sourceTree = "<group>";
+		};
+		BDFDA92116C286BF0039626D /* images-table-test */ = {
+			isa = PBXGroup;
+			children = (
+				E4975A0E16B9466B0042C70D /* 1.png */,
+				E4975A0F16B9466B0042C70D /* 2.png */,
+				E4975A1016B9466B0042C70D /* 3.png */,
+				E4975A1116B9466B0042C70D /* 4.png */,
+				E4975A1616B947B00042C70D /* 5.png */,
+				E4975A1716B947B00042C70D /* 6.png */,
+				E4296D1116B6C5CD00452DE5 /* effe.png */,
+			);
+			name = "images-table-test";
 			sourceTree = "<group>";
 		};
 		E41D40FE13B3A0D800A75A5D /* Products */ = {
@@ -523,6 +557,8 @@
 				E4975A1816B947B00042C70D /* 5.png in Resources */,
 				E4975A1916B947B00042C70D /* 6.png in Resources */,
 				BD667C2F16B2AE53005F959B /* test72.png in Resources */,
+				BDFDA92616C287840039626D /* ReachabilityTestViewController.xib in Resources */,
+				BDFDA93216C28A2A0039626D /* InfoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,6 +621,10 @@
 				BD667C6016B2CD8F005F959B /* Reachability.m in Sources */,
 				BDE30D1416B2EDF7002DA270 /* BoxesViewController.mm in Sources */,
 				BDE30D1716B2EE69002DA270 /* BoxesApp.mm in Sources */,
+				BDFDA92516C287840039626D /* ReachabilityTestViewController.m in Sources */,
+				BDFDA92916C288060039626D /* TextView.m in Sources */,
+				BDFDA92C16C288120039626D /* IdleView.m in Sources */,
+				BDFDA93116C28A2A0039626D /* InfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

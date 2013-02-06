@@ -12,5 +12,8 @@
 -(IBAction)launchCloudView:(id)sender;
 -(IBAction)launchBoxesApp:(id)sender;
 
+//socket test
+-(IBAction)launchSocketTest:(id)sender;
+
 
 @end

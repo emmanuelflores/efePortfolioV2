@@ -9,6 +9,7 @@
 #import "BoxesApp.h"
 
 #import "PortifolioViewController.h"
+#import "ReachabilityTestViewController.h"
 
 @interface LaunchAppViewController () {}
 
@@ -77,6 +78,11 @@
 {
     PortifolioViewController *portifolioVC = [[PortifolioViewController alloc]init];
     [self.navigationController pushViewController:portifolioVC animated:YES];
+}
+
+-(IBAction)launchSocketTest:(id)sender{
+    ReachabilityTestViewController *rtvc = [[ReachabilityTestViewController alloc]init];
+    [self.navigationController pushViewController:rtvc animated:YES];
 }
 
 -(void)launchCloudView:(id)sender{
