@@ -10,6 +10,7 @@
 
 #import "PortifolioViewController.h"
 #import "ReachabilityTestViewController.h"
+#import "VimeoViewController.h"
 
 @interface LaunchAppViewController () {}
 
@@ -84,6 +85,13 @@
     ReachabilityTestViewController *rtvc = [[ReachabilityTestViewController alloc]init];
     [self.navigationController pushViewController:rtvc animated:YES];
 }
+
+-(IBAction)launchVimeoView:(id)sender{
+    VimeoViewController *vvc = [[VimeoViewController alloc]init];
+    [self.navigationController pushViewController:vvc animated:YES];
+}
+
+#pragma mark - Actions to call OFW sketches
 
 -(void)launchCloudView:(id)sender{
     CloudGesture *cloudApp = new CloudGesture();

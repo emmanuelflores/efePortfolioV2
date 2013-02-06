@@ -14,6 +14,8 @@
 
 //socket test
 -(IBAction)launchSocketTest:(id)sender;
+//vimeo test
+-(IBAction)launchVimeoView:(id)sender;
 
 
 @end
