@@ -11,6 +11,7 @@
 #import "PortifolioViewController.h"
 #import "ReachabilityTestViewController.h"
 #import "VimeoViewController.h"
+#import "YouTubeViewController.h"
 
 @interface LaunchAppViewController () {}
 
@@ -89,6 +90,27 @@
 -(IBAction)launchVimeoView:(id)sender{
     VimeoViewController *vvc = [[VimeoViewController alloc]init];
     [self.navigationController pushViewController:vvc animated:YES];
+}
+
+-(IBAction)launchYouTubeView:(id)sender{
+    //here we need to decide the URL for the youTube/vimeo source
+    NSURL *url = [NSURL URLWithString:@"http://gdata.youtube.com/feeds/api/videos?alt=json&author=AKB48"];
+    //USE a dictionary to load the videos
+    /*
+    [NSURLConnection sendAsynchronousRequest:[NSURLRequest requestWithURL:url]
+                                       queue:[NSOperationQueue mainQueue]
+                           completionHandler:^(NSURLResponse *res, NSData *data, NSError *error) {
+                               NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data
+                                                                                   options:0
+                                                                                     error:nil];
+                               list = [[dic objectForKey:@"feed"] objectForKey:@"entry"];
+                               [self.tableView reloadData];
+                           }];
+     */
+
+    NSString *videoId = @"http://www.youtube.com/watch?v=1QebKMqdElg";
+    YouTubeViewController *ytvc = [[YouTubeViewController alloc]initWithVideoId:videoId];
+    [self.navigationController pushViewController:ytvc animated:YES];
 }
 
 #pragma mark - Actions to call OFW sketches
