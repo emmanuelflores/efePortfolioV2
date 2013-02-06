@@ -35,6 +35,10 @@
 		BD699D4B16B2A2840028B5E0 /* ParticleController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BD699D4A16B2A2840028B5E0 /* ParticleController.mm */; };
 		BD699D4E16B2A2F90028B5E0 /* CloudViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BD699D4D16B2A2F90028B5E0 /* CloudViewController.mm */; };
 		BD699D5116B2A3B00028B5E0 /* CloudGesture.mm in Sources */ = {isa = PBXBuildFile; fileRef = BD699D4F16B2A3AF0028B5E0 /* CloudGesture.mm */; };
+		BDE0B14A16C2BFF0003F1FB0 /* YouTubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE0B14816C2BFF0003F1FB0 /* YouTubeViewController.m */; };
+		BDE0B14B16C2BFF0003F1FB0 /* YouTubeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDE0B14916C2BFF0003F1FB0 /* YouTubeViewController.xib */; };
+		BDE0B15216C2C23C003F1FB0 /* LBYouTubeExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE0B14F16C2C23C003F1FB0 /* LBYouTubeExtractor.m */; };
+		BDE0B15316C2C23C003F1FB0 /* LBYouTubePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE0B15116C2C23C003F1FB0 /* LBYouTubePlayerController.m */; };
 		BDE30D1416B2EDF7002DA270 /* BoxesViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BDE30D1316B2EDF7002DA270 /* BoxesViewController.mm */; };
 		BDE30D1716B2EE69002DA270 /* BoxesApp.mm in Sources */ = {isa = PBXBuildFile; fileRef = BDE30D1516B2EE68002DA270 /* BoxesApp.mm */; };
 		BDEACDBE16B189FD007FCF96 /* FioritoAttractor.mm in Sources */ = {isa = PBXBuildFile; fileRef = BDEACDBC16B189FD007FCF96 /* FioritoAttractor.mm */; };
@@ -51,8 +55,8 @@
 		BDFDA93C16C29AC90039626D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDFDA93B16C29AC90039626D /* MediaPlayer.framework */; };
 		BDFDA9FC16C2AB4B0039626D /* vimeo.js.txt in Resources */ = {isa = PBXBuildFile; fileRef = BDFDA9F916C2AB4B0039626D /* vimeo.js.txt */; };
 		BDFDA9FD16C2AB4B0039626D /* VimeoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFDA9FB16C2AB4B0039626D /* VimeoHelper.m */; };
-		BDFDAA0116C2AF500039626D /* YouTubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFDA9FF16C2AF500039626D /* YouTubeViewController.m */; };
-		BDFDAA0216C2AF500039626D /* YouTubeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDFDAA0016C2AF500039626D /* YouTubeViewController.xib */; };
+		BDFDAA0116C2AF500039626D /* YouTubeJSONViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFDA9FF16C2AF500039626D /* YouTubeJSONViewController.m */; };
+		BDFDAA0216C2AF500039626D /* YouTubeJSONViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDFDAA0016C2AF500039626D /* YouTubeJSONViewController.xib */; };
 		BDFDAA0616C2B1750039626D /* FMYouTubeVideoSourceDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = BDFDAA0516C2B1750039626D /* FMYouTubeVideoSourceDetector.m */; };
 		E41D400B13B39D2100A75A5D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41D400613B39D2100A75A5D /* AVFoundation.framework */; };
 		E41D400C13B39D2100A75A5D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41D400713B39D2100A75A5D /* CoreMedia.framework */; };
@@ -138,6 +142,14 @@
 		BD699D4F16B2A3AF0028B5E0 /* CloudGesture.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CloudGesture.mm; sourceTree = "<group>"; };
 		BD699D5016B2A3B00028B5E0 /* CloudGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudGesture.h; sourceTree = "<group>"; };
 		BD8EE4E716B1837300706EC9 /* InfoLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = InfoLog; sourceTree = "<group>"; };
+		BDE0B14716C2BFF0003F1FB0 /* YouTubeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YouTubeViewController.h; path = VimeoHelper/YouTubeViewController.h; sourceTree = "<group>"; };
+		BDE0B14816C2BFF0003F1FB0 /* YouTubeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YouTubeViewController.m; path = VimeoHelper/YouTubeViewController.m; sourceTree = "<group>"; };
+		BDE0B14916C2BFF0003F1FB0 /* YouTubeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = YouTubeViewController.xib; path = VimeoHelper/YouTubeViewController.xib; sourceTree = "<group>"; };
+		BDE0B14D16C2C23C003F1FB0 /* LBYouTube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBYouTube.h; sourceTree = "<group>"; };
+		BDE0B14E16C2C23C003F1FB0 /* LBYouTubeExtractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBYouTubeExtractor.h; sourceTree = "<group>"; };
+		BDE0B14F16C2C23C003F1FB0 /* LBYouTubeExtractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBYouTubeExtractor.m; sourceTree = "<group>"; };
+		BDE0B15016C2C23C003F1FB0 /* LBYouTubePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBYouTubePlayerController.h; sourceTree = "<group>"; };
+		BDE0B15116C2C23C003F1FB0 /* LBYouTubePlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBYouTubePlayerController.m; sourceTree = "<group>"; };
 		BDE30D1216B2EDF7002DA270 /* BoxesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoxesViewController.h; sourceTree = "<group>"; };
 		BDE30D1316B2EDF7002DA270 /* BoxesViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BoxesViewController.mm; sourceTree = "<group>"; };
 		BDE30D1516B2EE68002DA270 /* BoxesApp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BoxesApp.mm; sourceTree = "<group>"; };
@@ -168,9 +180,9 @@
 		BDFDA9F916C2AB4B0039626D /* vimeo.js.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vimeo.js.txt; sourceTree = "<group>"; };
 		BDFDA9FA16C2AB4B0039626D /* VimeoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VimeoHelper.h; sourceTree = "<group>"; };
 		BDFDA9FB16C2AB4B0039626D /* VimeoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VimeoHelper.m; sourceTree = "<group>"; };
-		BDFDA9FE16C2AF500039626D /* YouTubeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeViewController.h; sourceTree = "<group>"; };
-		BDFDA9FF16C2AF500039626D /* YouTubeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeViewController.m; sourceTree = "<group>"; };
-		BDFDAA0016C2AF500039626D /* YouTubeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YouTubeViewController.xib; sourceTree = "<group>"; };
+		BDFDA9FE16C2AF500039626D /* YouTubeJSONViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeJSONViewController.h; sourceTree = "<group>"; };
+		BDFDA9FF16C2AF500039626D /* YouTubeJSONViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeJSONViewController.m; sourceTree = "<group>"; };
+		BDFDAA0016C2AF500039626D /* YouTubeJSONViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YouTubeJSONViewController.xib; sourceTree = "<group>"; };
 		BDFDAA0416C2B1750039626D /* FMYouTubeVideoSourceDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMYouTubeVideoSourceDetector.h; sourceTree = "<group>"; };
 		BDFDAA0516C2B1750039626D /* FMYouTubeVideoSourceDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMYouTubeVideoSourceDetector.m; sourceTree = "<group>"; };
 		E41D3ED613B38FB500A75A5D /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
@@ -373,9 +385,12 @@
 				BDFDA93316C29A3A0039626D /* VimeoViewController.h */,
 				BDFDA93416C29A3A0039626D /* VimeoViewController.m */,
 				BDFDA93516C29A3A0039626D /* VimeoViewController.xib */,
-				BDFDA9FE16C2AF500039626D /* YouTubeViewController.h */,
-				BDFDA9FF16C2AF500039626D /* YouTubeViewController.m */,
-				BDFDAA0016C2AF500039626D /* YouTubeViewController.xib */,
+				BDE0B14716C2BFF0003F1FB0 /* YouTubeViewController.h */,
+				BDE0B14816C2BFF0003F1FB0 /* YouTubeViewController.m */,
+				BDE0B14916C2BFF0003F1FB0 /* YouTubeViewController.xib */,
+				BDFDA9FE16C2AF500039626D /* YouTubeJSONViewController.h */,
+				BDFDA9FF16C2AF500039626D /* YouTubeJSONViewController.m */,
+				BDFDAA0016C2AF500039626D /* YouTubeJSONViewController.xib */,
 			);
 			name = webVideoPlayers;
 			sourceTree = "<group>";
@@ -395,6 +410,27 @@
 				BD699D4716B2A2080028B5E0 /* Perlin.mm */,
 			);
 			name = cloudApp;
+			sourceTree = "<group>";
+		};
+		BDE0B13E16C2BEF2003F1FB0 /* JSONTube */ = {
+			isa = PBXGroup;
+			children = (
+				BDFDAA0416C2B1750039626D /* FMYouTubeVideoSourceDetector.h */,
+				BDFDAA0516C2B1750039626D /* FMYouTubeVideoSourceDetector.m */,
+			);
+			name = JSONTube;
+			sourceTree = "<group>";
+		};
+		BDE0B14C16C2C23C003F1FB0 /* LBYouTubeView */ = {
+			isa = PBXGroup;
+			children = (
+				BDE0B14D16C2C23C003F1FB0 /* LBYouTube.h */,
+				BDE0B14E16C2C23C003F1FB0 /* LBYouTubeExtractor.h */,
+				BDE0B14F16C2C23C003F1FB0 /* LBYouTubeExtractor.m */,
+				BDE0B15016C2C23C003F1FB0 /* LBYouTubePlayerController.h */,
+				BDE0B15116C2C23C003F1FB0 /* LBYouTubePlayerController.m */,
+			);
+			path = LBYouTubeView;
 			sourceTree = "<group>";
 		};
 		BDE30D1016B2EDC3002DA270 /* boxesApp */ = {
@@ -462,8 +498,8 @@
 		BDFDAA0316C2B1660039626D /* YouTubeSource */ = {
 			isa = PBXGroup;
 			children = (
-				BDFDAA0416C2B1750039626D /* FMYouTubeVideoSourceDetector.h */,
-				BDFDAA0516C2B1750039626D /* FMYouTubeVideoSourceDetector.m */,
+				BDE0B14C16C2C23C003F1FB0 /* LBYouTubeView */,
+				BDE0B13E16C2BEF2003F1FB0 /* JSONTube */,
 			);
 			name = YouTubeSource;
 			sourceTree = "<group>";
@@ -610,7 +646,8 @@
 				BDFDA93216C28A2A0039626D /* InfoViewController.xib in Resources */,
 				BDFDA93716C29A3A0039626D /* VimeoViewController.xib in Resources */,
 				BDFDA9FC16C2AB4B0039626D /* vimeo.js.txt in Resources */,
-				BDFDAA0216C2AF500039626D /* YouTubeViewController.xib in Resources */,
+				BDFDAA0216C2AF500039626D /* YouTubeJSONViewController.xib in Resources */,
+				BDE0B14B16C2BFF0003F1FB0 /* YouTubeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -679,8 +716,11 @@
 				BDFDA93116C28A2A0039626D /* InfoViewController.m in Sources */,
 				BDFDA93616C29A3A0039626D /* VimeoViewController.m in Sources */,
 				BDFDA9FD16C2AB4B0039626D /* VimeoHelper.m in Sources */,
-				BDFDAA0116C2AF500039626D /* YouTubeViewController.m in Sources */,
+				BDFDAA0116C2AF500039626D /* YouTubeJSONViewController.m in Sources */,
 				BDFDAA0616C2B1750039626D /* FMYouTubeVideoSourceDetector.m in Sources */,
+				BDE0B14A16C2BFF0003F1FB0 /* YouTubeViewController.m in Sources */,
+				BDE0B15216C2C23C003F1FB0 /* LBYouTubeExtractor.m in Sources */,
+				BDE0B15316C2C23C003F1FB0 /* LBYouTubePlayerController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

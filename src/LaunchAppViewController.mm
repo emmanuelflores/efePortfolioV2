@@ -11,6 +11,7 @@
 #import "PortifolioViewController.h"
 #import "ReachabilityTestViewController.h"
 #import "VimeoViewController.h"
+#import "YouTubeJSONViewController.h"
 #import "YouTubeViewController.h"
 
 @interface LaunchAppViewController () {}
@@ -92,7 +93,7 @@
     [self.navigationController pushViewController:vvc animated:YES];
 }
 
--(IBAction)launchYouTubeView:(id)sender{
+-(IBAction)launchYouTubeJSONView:(id)sender{
     //here we need to decide the URL for the youTube/vimeo source
     NSURL *url = [NSURL URLWithString:@"http://gdata.youtube.com/feeds/api/videos?alt=json&author=AKB48"];
     //USE a dictionary to load the videos
@@ -108,8 +109,14 @@
                            }];
      */
 
+    //CHECK HERE THE URL as it is loaded from a server
     NSString *videoId = @"http://www.youtube.com/watch?v=1QebKMqdElg";
-    YouTubeViewController *ytvc = [[YouTubeViewController alloc]initWithVideoId:videoId];
+    YouTubeJSONViewController *ytvc = [[YouTubeJSONViewController alloc]initWithVideoId:videoId];
+    [self.navigationController pushViewController:ytvc animated:YES];
+}
+
+-(IBAction)launchYouTubeView:(id)sender{
+    YouTubeViewController *ytvc = [[YouTubeViewController alloc]init];
     [self.navigationController pushViewController:ytvc animated:YES];
 }
 

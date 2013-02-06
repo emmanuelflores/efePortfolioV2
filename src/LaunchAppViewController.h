@@ -16,6 +16,8 @@
 -(IBAction)launchSocketTest:(id)sender;
 //vimeo test
 -(IBAction)launchVimeoView:(id)sender;
+//youtube JSON test
+-(IBAction)launchYouTubeJSONView:(id)sender;
 //youtube test
 -(IBAction)launchYouTubeView:(id)sender;
 

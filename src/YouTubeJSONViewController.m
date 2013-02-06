@@ -6,13 +6,13 @@
 //
 //
 
-#import "YouTubeViewController.h"
+#import "YouTubeJSONViewController.h"
 #import "FMYouTubeVideoSourceDetector.h"
 
-@interface YouTubeViewController ()<UIWebViewDelegate>
+@interface YouTubeJSONViewController ()<UIWebViewDelegate>
 @end
 
-@implementation YouTubeViewController{
+@implementation YouTubeJSONViewController{
     NSString *_videoId;
     NSURL *_sourceURL;
     FMYouTubeVideoSourceDetector *detector;
@@ -64,7 +64,7 @@
 -(void)startDetectVideoSourceURL;
 {
     detector = [[FMYouTubeVideoSourceDetector alloc] init];
-    __weak YouTubeViewController *_self = self;
+    __weak YouTubeJSONViewController *_self = self;
     [detector detectSourceURLofVideoId:self.videoId
                             completion:^(NSURL *sourceURL, NSError *error) {
                                 if (error) {
