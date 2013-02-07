@@ -41,6 +41,10 @@
 		BD1DFB3B16C3A4E8004D86F9 /* DejalActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1DFB3A16C3A4E8004D86F9 /* DejalActivityView.m */; };
 		BD1DFB3F16C3A626004D86F9 /* ActivityTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1DFB3D16C3A626004D86F9 /* ActivityTestViewController.m */; };
 		BD1DFB4016C3A626004D86F9 /* ActivityTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1DFB3E16C3A626004D86F9 /* ActivityTestViewController.xib */; };
+		BD1DFB4516C3AF3B004D86F9 /* ModalTemplateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1DFB4316C3AF39004D86F9 /* ModalTemplateViewController.m */; };
+		BD1DFB4616C3AF3B004D86F9 /* ModalTemplateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1DFB4416C3AF3A004D86F9 /* ModalTemplateViewController.xib */; };
+		BD1DFB4A16C3B197004D86F9 /* backgroundViews@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD1DFB4816C3B197004D86F9 /* backgroundViews@2x.png */; };
+		BD1DFB4B16C3B197004D86F9 /* backgroundViews.png in Resources */ = {isa = PBXBuildFile; fileRef = BD1DFB4916C3B197004D86F9 /* backgroundViews.png */; };
 		BD4FC28316B1718900EB70BD /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC28216B1718900EB70BD /* iPadStoryboard.storyboard */; };
 		BD4FC2B816B17AC100EB70BD /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC2B716B17AC100EB70BD /* splash.png */; };
 		BD4FC2BA16B17AD100EB70BD /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC2B916B17AD100EB70BD /* Default-Portrait@2x~ipad.png */; };
@@ -181,6 +185,11 @@
 		BD1DFB3C16C3A626004D86F9 /* ActivityTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityTestViewController.h; sourceTree = "<group>"; };
 		BD1DFB3D16C3A626004D86F9 /* ActivityTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityTestViewController.m; sourceTree = "<group>"; };
 		BD1DFB3E16C3A626004D86F9 /* ActivityTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityTestViewController.xib; sourceTree = "<group>"; };
+		BD1DFB4216C3AF39004D86F9 /* ModalTemplateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalTemplateViewController.h; sourceTree = "<group>"; };
+		BD1DFB4316C3AF39004D86F9 /* ModalTemplateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalTemplateViewController.m; sourceTree = "<group>"; };
+		BD1DFB4416C3AF3A004D86F9 /* ModalTemplateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalTemplateViewController.xib; sourceTree = "<group>"; };
+		BD1DFB4816C3B197004D86F9 /* backgroundViews@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backgroundViews@2x.png"; sourceTree = "<group>"; };
+		BD1DFB4916C3B197004D86F9 /* backgroundViews.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundViews.png; sourceTree = "<group>"; };
 		BD4FC28216B1718900EB70BD /* iPadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPadStoryboard.storyboard; sourceTree = "<group>"; };
 		BD4FC2B716B17AC100EB70BD /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 		BD4FC2B916B17AD100EB70BD /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
@@ -530,9 +539,19 @@
 			name = test;
 			sourceTree = "<group>";
 		};
+		BD1DFB4716C3B173004D86F9 /* backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				BD1DFB4816C3B197004D86F9 /* backgroundViews@2x.png */,
+				BD1DFB4916C3B197004D86F9 /* backgroundViews.png */,
+			);
+			name = backgrounds;
+			sourceTree = "<group>";
+		};
 		BD4FC28116B1716000EB70BD /* artwork-resources */ = {
 			isa = PBXGroup;
 			children = (
+				BD1DFB4716C3B173004D86F9 /* backgrounds */,
 				BD1DFAAA16C393F6004D86F9 /* splash-images */,
 				BDFDA92116C286BF0039626D /* images-table-test */,
 			);
@@ -719,6 +738,9 @@
 				914F466316AC3E1C00786D52 /* AppDelegate.mm */,
 				914F467816AC417600786D52 /* LaunchAppViewController.h */,
 				914F467916AC417600786D52 /* LaunchAppViewController.mm */,
+				BD1DFB4216C3AF39004D86F9 /* ModalTemplateViewController.h */,
+				BD1DFB4316C3AF39004D86F9 /* ModalTemplateViewController.m */,
+				BD1DFB4416C3AF3A004D86F9 /* ModalTemplateViewController.xib */,
 				BD1DFA6316C39155004D86F9 /* UIElements */,
 				E4DCA82E16B2B1B90011BE2A /* Data */,
 				BD4FC28416B175AB00EB70BD /* viewcontrollers */,
@@ -851,6 +873,9 @@
 				BD1DFB3116C398ED004D86F9 /* ImageCachedTestViewController.xib in Resources */,
 				BD1DFB3516C39F20004D86F9 /* Segoe UI.ttf in Resources */,
 				BD1DFB4016C3A626004D86F9 /* ActivityTestViewController.xib in Resources */,
+				BD1DFB4616C3AF3B004D86F9 /* ModalTemplateViewController.xib in Resources */,
+				BD1DFB4A16C3B197004D86F9 /* backgroundViews@2x.png in Resources */,
+				BD1DFB4B16C3B197004D86F9 /* backgroundViews.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -942,6 +967,7 @@
 				BD1DFB3816C3A116004D86F9 /* AUIActivityIndicator.m in Sources */,
 				BD1DFB3B16C3A4E8004D86F9 /* DejalActivityView.m in Sources */,
 				BD1DFB3F16C3A626004D86F9 /* ActivityTestViewController.m in Sources */,
+				BD1DFB4516C3AF3B004D86F9 /* ModalTemplateViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

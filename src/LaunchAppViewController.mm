@@ -16,6 +16,9 @@
 #import "ImageCachedTestViewController.h"
 #import "ActivityTestViewController.h"
 
+#import "PrettyKit.h"
+#import "ModalTemplateViewController.h"
+
 @interface LaunchAppViewController () {}
 
 @end
@@ -194,12 +197,25 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.navigationItem.title = @"Style Test";
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]
+                                              initWithBarButtonSystemItem:UIBarButtonSystemItemCompose
+                                              target:self
+                                              action:@selector(pkClick:)];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+#pragma mark - PrettyKit methods
+-(void)pkClick:(id)sender
+{
+	ModalTemplateViewController *modalView = [[ModalTemplateViewController alloc] initWithNibName:@"ModalTemplateViewController" bundle:nil];
+	[self presentModalViewController:modalView animated:YES];
 }
 
 @end
