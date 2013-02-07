@@ -32,6 +32,10 @@
 		BD1DFAA716C3938F004D86F9 /* PrettyShadowPlainTableview.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1DFA9C16C3938F004D86F9 /* PrettyShadowPlainTableview.m */; };
 		BD1DFAA816C3938F004D86F9 /* PrettyTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1DFA9E16C3938F004D86F9 /* PrettyTabBar.m */; };
 		BD1DFAA916C3938F004D86F9 /* PrettyToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1DFAA016C3938F004D86F9 /* PrettyToolbar.m */; };
+		BD1DFB2A16C398B8004D86F9 /* URLImageCached.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1DFB2716C398B8004D86F9 /* URLImageCached.m */; };
+		BD1DFB2B16C398B8004D86F9 /* URLImageLoadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1DFB2916C398B8004D86F9 /* URLImageLoadOperation.m */; };
+		BD1DFB3016C398ED004D86F9 /* ImageCachedTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1DFB2E16C398ED004D86F9 /* ImageCachedTestViewController.m */; };
+		BD1DFB3116C398ED004D86F9 /* ImageCachedTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1DFB2F16C398ED004D86F9 /* ImageCachedTestViewController.xib */; };
 		BD4FC28316B1718900EB70BD /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC28216B1718900EB70BD /* iPadStoryboard.storyboard */; };
 		BD4FC2B816B17AC100EB70BD /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC2B716B17AC100EB70BD /* splash.png */; };
 		BD4FC2BA16B17AD100EB70BD /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC2B916B17AD100EB70BD /* Default-Portrait@2x~ipad.png */; };
@@ -156,6 +160,14 @@
 		BD1DFA9E16C3938F004D86F9 /* PrettyTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrettyTabBar.m; sourceTree = "<group>"; };
 		BD1DFA9F16C3938F004D86F9 /* PrettyToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrettyToolbar.h; sourceTree = "<group>"; };
 		BD1DFAA016C3938F004D86F9 /* PrettyToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrettyToolbar.m; sourceTree = "<group>"; };
+		BD1DFB2516C398B8004D86F9 /* URLImageCacheConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLImageCacheConstants.h; sourceTree = "<group>"; };
+		BD1DFB2616C398B8004D86F9 /* URLImageCached.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLImageCached.h; sourceTree = "<group>"; };
+		BD1DFB2716C398B8004D86F9 /* URLImageCached.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLImageCached.m; sourceTree = "<group>"; };
+		BD1DFB2816C398B8004D86F9 /* URLImageLoadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLImageLoadOperation.h; sourceTree = "<group>"; };
+		BD1DFB2916C398B8004D86F9 /* URLImageLoadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLImageLoadOperation.m; sourceTree = "<group>"; };
+		BD1DFB2D16C398ED004D86F9 /* ImageCachedTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCachedTestViewController.h; sourceTree = "<group>"; };
+		BD1DFB2E16C398ED004D86F9 /* ImageCachedTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCachedTestViewController.m; sourceTree = "<group>"; };
+		BD1DFB2F16C398ED004D86F9 /* ImageCachedTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCachedTestViewController.xib; sourceTree = "<group>"; };
 		BD4FC28216B1718900EB70BD /* iPadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPadStoryboard.storyboard; sourceTree = "<group>"; };
 		BD4FC2B716B17AC100EB70BD /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 		BD4FC2B916B17AD100EB70BD /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
@@ -290,7 +302,7 @@
 			children = (
 				BD8EE4E716B1837300706EC9 /* InfoLog */,
 				BD667C2E16B2AE53005F959B /* test72.png */,
-				BD4FC28116B1716000EB70BD /* artwork */,
+				BD4FC28116B1716000EB70BD /* artwork-resources */,
 				E4D8936A11527B74007E1F53 /* src */,
 				BB24E1F710DAA51900E9C588 /* openFrameworks */,
 				BB16F26B0F2B646B00518274 /* addons */,
@@ -412,10 +424,9 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		BD4FC28116B1716000EB70BD /* artwork */ = {
+		BD1DFAAA16C393F6004D86F9 /* splash-images */ = {
 			isa = PBXGroup;
 			children = (
-				BDFDA92116C286BF0039626D /* images-table-test */,
 				BD4FC2BF16B17BF200EB70BD /* Default-Landscape~ipad.png */,
 				BD4FC2BD16B17BEE00EB70BD /* Default-Landscape@2x~ipad.png */,
 				BD4FC2BB16B17AD500EB70BD /* Default-Portrait~ipad.png */,
@@ -423,7 +434,71 @@
 				BD4FC2B716B17AC100EB70BD /* splash.png */,
 				BD110ACA16B16BD8001F2642 /* Default-568h@2x.png */,
 			);
-			name = artwork;
+			name = "splash-images";
+			sourceTree = "<group>";
+		};
+		BD1DFAAC16C395AD004D86F9 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				BDFDA92216C287840039626D /* ReachabilityTestViewController.h */,
+				BDFDA92316C287840039626D /* ReachabilityTestViewController.m */,
+				BDFDA92416C287840039626D /* ReachabilityTestViewController.xib */,
+				BDFDA92716C288060039626D /* TextView.h */,
+				BDFDA92816C288060039626D /* TextView.m */,
+				BDFDA92A16C288120039626D /* IdleView.h */,
+				BDFDA92B16C288120039626D /* IdleView.m */,
+				BDFDA92E16C28A2A0039626D /* InfoViewController.h */,
+				BDFDA92F16C28A2A0039626D /* InfoViewController.m */,
+				BDFDA93016C28A2A0039626D /* InfoViewController.xib */,
+			);
+			name = test;
+			sourceTree = "<group>";
+		};
+		BD1DFAAD16C395C7004D86F9 /* GCNetworkRequest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = GCNetworkRequest;
+			sourceTree = "<group>";
+		};
+		BD1DFB2416C39892004D86F9 /* imageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				BD1DFB2C16C398D3004D86F9 /* test */,
+				BD1DFB2516C398B8004D86F9 /* URLImageCacheConstants.h */,
+				BD1DFB2616C398B8004D86F9 /* URLImageCached.h */,
+				BD1DFB2716C398B8004D86F9 /* URLImageCached.m */,
+				BD1DFB2816C398B8004D86F9 /* URLImageLoadOperation.h */,
+				BD1DFB2916C398B8004D86F9 /* URLImageLoadOperation.m */,
+			);
+			name = imageLoader;
+			sourceTree = "<group>";
+		};
+		BD1DFB2C16C398D3004D86F9 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				BD1DFB2D16C398ED004D86F9 /* ImageCachedTestViewController.h */,
+				BD1DFB2E16C398ED004D86F9 /* ImageCachedTestViewController.m */,
+				BD1DFB2F16C398ED004D86F9 /* ImageCachedTestViewController.xib */,
+			);
+			name = test;
+			sourceTree = "<group>";
+		};
+		BD1DFB3216C39B27004D86F9 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
+		BD4FC28116B1716000EB70BD /* artwork-resources */ = {
+			isa = PBXGroup;
+			children = (
+				BD1DFB3216C39B27004D86F9 /* fonts */,
+				BD1DFAAA16C393F6004D86F9 /* splash-images */,
+				BDFDA92116C286BF0039626D /* images-table-test */,
+			);
+			name = "artwork-resources";
 			sourceTree = "<group>";
 		};
 		BD4FC28416B175AB00EB70BD /* viewcontrollers */ = {
@@ -445,18 +520,10 @@
 		BD667C3916B2C43D005F959B /* webConnection */ = {
 			isa = PBXGroup;
 			children = (
+				BD1DFAAD16C395C7004D86F9 /* GCNetworkRequest */,
+				BD1DFAAC16C395AD004D86F9 /* test */,
 				BD667C5E16B2CD8F005F959B /* Reachability.h */,
 				BD667C5F16B2CD8F005F959B /* Reachability.m */,
-				BDFDA92216C287840039626D /* ReachabilityTestViewController.h */,
-				BDFDA92316C287840039626D /* ReachabilityTestViewController.m */,
-				BDFDA92416C287840039626D /* ReachabilityTestViewController.xib */,
-				BDFDA92716C288060039626D /* TextView.h */,
-				BDFDA92816C288060039626D /* TextView.m */,
-				BDFDA92A16C288120039626D /* IdleView.h */,
-				BDFDA92B16C288120039626D /* IdleView.m */,
-				BDFDA92E16C28A2A0039626D /* InfoViewController.h */,
-				BDFDA92F16C28A2A0039626D /* InfoViewController.m */,
-				BDFDA93016C28A2A0039626D /* InfoViewController.xib */,
 			);
 			name = webConnection;
 			sourceTree = "<group>";
@@ -617,6 +684,7 @@
 				BD1DFA6316C39155004D86F9 /* UIElements */,
 				E4DCA82E16B2B1B90011BE2A /* Data */,
 				BD4FC28416B175AB00EB70BD /* viewcontrollers */,
+				BD1DFB2416C39892004D86F9 /* imageLoader */,
 				BD667C6416B2CFF1005F959B /* webVideoPlayers */,
 				BD667C3916B2C43D005F959B /* webConnection */,
 				BD4FC28416B175AB00EB70BD /* viewcontrollers */,
@@ -742,6 +810,7 @@
 				BDFDA9FC16C2AB4B0039626D /* vimeo.js.txt in Resources */,
 				BDFDAA0216C2AF500039626D /* YouTubeJSONViewController.xib in Resources */,
 				BDE0B14B16C2BFF0003F1FB0 /* YouTubeViewController.xib in Resources */,
+				BD1DFB3116C398ED004D86F9 /* ImageCachedTestViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -827,6 +896,9 @@
 				BD1DFAA716C3938F004D86F9 /* PrettyShadowPlainTableview.m in Sources */,
 				BD1DFAA816C3938F004D86F9 /* PrettyTabBar.m in Sources */,
 				BD1DFAA916C3938F004D86F9 /* PrettyToolbar.m in Sources */,
+				BD1DFB2A16C398B8004D86F9 /* URLImageCached.m in Sources */,
+				BD1DFB2B16C398B8004D86F9 /* URLImageLoadOperation.m in Sources */,
+				BD1DFB3016C398ED004D86F9 /* ImageCachedTestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

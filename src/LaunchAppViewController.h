@@ -20,6 +20,8 @@
 -(IBAction)launchYouTubeJSONView:(id)sender;
 //youtube test
 -(IBAction)launchYouTubeView:(id)sender;
+//image loader test
+-(IBAction)launchImageLoader:(id)sender;
 
 
 @end

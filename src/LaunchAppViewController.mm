@@ -13,6 +13,7 @@
 #import "VimeoViewController.h"
 #import "YouTubeJSONViewController.h"
 #import "YouTubeViewController.h"
+#import "ImageCachedTestViewController.h"
 
 @interface LaunchAppViewController () {}
 
@@ -120,6 +121,12 @@
     [self.navigationController pushViewController:ytvc animated:YES];
 }
 
+-(IBAction)launchImageLoader:(id)sender{
+    ImageCachedTestViewController *ivc = [[ImageCachedTestViewController alloc]init];
+    [self.navigationController pushViewController:ivc animated:YES];
+}
+
+//////////////////////////////////////////////////
 #pragma mark - Actions to call OFW sketches
 
 -(void)launchCloudView:(id)sender{
