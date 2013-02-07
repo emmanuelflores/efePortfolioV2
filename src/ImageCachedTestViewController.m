@@ -23,6 +23,8 @@
 @synthesize imageView, progressView;
 
 #pragma mark - Memory Management
+//MOVE THIS TO THE UNLOAD METHOD?
+//////////////////////////////////////////////
 -(void)dealloc {
     
     

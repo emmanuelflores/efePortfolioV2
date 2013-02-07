@@ -36,6 +36,7 @@
 		BD1DFB2B16C398B8004D86F9 /* URLImageLoadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1DFB2916C398B8004D86F9 /* URLImageLoadOperation.m */; };
 		BD1DFB3016C398ED004D86F9 /* ImageCachedTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1DFB2E16C398ED004D86F9 /* ImageCachedTestViewController.m */; };
 		BD1DFB3116C398ED004D86F9 /* ImageCachedTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1DFB2F16C398ED004D86F9 /* ImageCachedTestViewController.xib */; };
+		BD1DFB3516C39F20004D86F9 /* Segoe UI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD1DFB3416C39F20004D86F9 /* Segoe UI.ttf */; };
 		BD4FC28316B1718900EB70BD /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC28216B1718900EB70BD /* iPadStoryboard.storyboard */; };
 		BD4FC2B816B17AC100EB70BD /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC2B716B17AC100EB70BD /* splash.png */; };
 		BD4FC2BA16B17AD100EB70BD /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC2B916B17AD100EB70BD /* Default-Portrait@2x~ipad.png */; };
@@ -168,6 +169,7 @@
 		BD1DFB2D16C398ED004D86F9 /* ImageCachedTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCachedTestViewController.h; sourceTree = "<group>"; };
 		BD1DFB2E16C398ED004D86F9 /* ImageCachedTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCachedTestViewController.m; sourceTree = "<group>"; };
 		BD1DFB2F16C398ED004D86F9 /* ImageCachedTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCachedTestViewController.xib; sourceTree = "<group>"; };
+		BD1DFB3416C39F20004D86F9 /* Segoe UI.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe UI.ttf"; sourceTree = "<group>"; };
 		BD4FC28216B1718900EB70BD /* iPadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPadStoryboard.storyboard; sourceTree = "<group>"; };
 		BD4FC2B716B17AC100EB70BD /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 		BD4FC2B916B17AD100EB70BD /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
@@ -371,6 +373,8 @@
 		BD1DFA6316C39155004D86F9 /* UIElements */ = {
 			isa = PBXGroup;
 			children = (
+				BD1DFB3216C39B27004D86F9 /* fonts */,
+				BD1DFB3316C39E61004D86F9 /* activity-indicator */,
 				BD1DFA8C16C3938F004D86F9 /* PrettyKit */,
 				BD1DFA6416C39168004D86F9 /* ABTab */,
 			);
@@ -487,14 +491,22 @@
 		BD1DFB3216C39B27004D86F9 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
+				BD1DFB3416C39F20004D86F9 /* Segoe UI.ttf */,
 			);
 			name = fonts;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		BD1DFB3316C39E61004D86F9 /* activity-indicator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "activity-indicator";
 			sourceTree = "<group>";
 		};
 		BD4FC28116B1716000EB70BD /* artwork-resources */ = {
 			isa = PBXGroup;
 			children = (
-				BD1DFB3216C39B27004D86F9 /* fonts */,
 				BD1DFAAA16C393F6004D86F9 /* splash-images */,
 				BDFDA92116C286BF0039626D /* images-table-test */,
 			);
@@ -811,6 +823,7 @@
 				BDFDAA0216C2AF500039626D /* YouTubeJSONViewController.xib in Resources */,
 				BDE0B14B16C2BFF0003F1FB0 /* YouTubeViewController.xib in Resources */,
 				BD1DFB3116C398ED004D86F9 /* ImageCachedTestViewController.xib in Resources */,
+				BD1DFB3516C39F20004D86F9 /* Segoe UI.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
