@@ -1,3 +1,11 @@
+//
+//
+//
+//
+//
+//
+//
+
 #import "LaunchAppViewController.h"
 #import "ExampleOFAppViewController.h"
 #import "ExampleOFApp.h"
@@ -19,11 +27,14 @@
 #import "PrettyKit.h"
 #import "ModalTemplateViewController.h"
 
-@interface LaunchAppViewController () {}
+
+
+@interface LaunchAppViewController (PrivateMethods) {}
 
 @end
 
 @implementation LaunchAppViewController
+
 
 #pragma mark - Buttons to access the GL scenes
 
@@ -126,6 +137,7 @@
 }
 
 -(IBAction)launchImageLoader:(id)sender{
+    //CHECK THE PUSHING OF THE VIEW
     ImageCachedTestViewController *ivc = [[ImageCachedTestViewController alloc]init];
     [self.navigationController pushViewController:ivc animated:YES];
 }
@@ -199,27 +211,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+//	//Gradient background
+//    CAGradientLayer *gradient = [CAGradientLayer layer];
+//    //gradient.frame = self.view.bounds;
+//    gradient.frame = CGRectMake(0,0,self.view.bounds.size.height, self.view.bounds.size.width);
+//    //0x009999
+//    gradient.colors = [NSArray arrayWithObjects:(id)[[UIColor colorWithHex:0xCCFFCC] CGColor], (id)[[UIColor colorWithHex:0x33CCCC] CGColor], nil];
+//    [self.view.layer insertSublayer:gradient atIndex:0];
     
     //customize navigation bar et al
     PrettyNavigationBar *navBar = (PrettyNavigationBar *)self.navigationController.navigationBar;
     
     //Color Codes
     //http://www.nthelp.com/colorcodes.htm
-    
-      //navBar.topLineColor = [UIColor colorWithHex:0x3399CC];
-//    navBar.gradientStartColor = [UIColor colorWithHex:0xDD0000];
-//    navBar.gradientEndColor = [UIColor colorWithHex:0xAA0000];
-      //navBar.bottomLineColor = [UIColor colorWithHex:0x000000];
-    /*
-     #define default_shadow_opacity 0.5
-     #define default_gradient_end_color      [UIColor colorWithHex:0x297CB7]
-     #define default_gradient_start_color    [UIColor colorWithHex:0x53A4DE]
-     #define default_top_line_color          [UIColor colorWithHex:0x84B7D5]
-     #define default_bottom_line_color       [UIColor colorWithHex:0x186399]
-     #define default_tint_color              [UIColor colorWithHex:0x3D89BF]
-     #define default_roundedcorner_color     [UIColor blackColor]
-     */
     navBar.tintColor = navBar.gradientEndColor;
     navBar.roundedCornerRadius = 2;
     navBar.shadowOpacity = 0.2;
@@ -230,6 +234,113 @@
                                               target:self
                                               action:@selector(pkClick:)];
     
+    
+    //CHANGE STYLE OF THE BUTTONS
+    //TrebuchetMS-Bold
+    UIFont *segoeFont = [UIFont fontWithName:@"GillSans-Bold" size:20];
+
+    UIButton *appButton = [UIButton buttonWithType:UIButtonTypeCustom];//UIButtonTypeCustom UIButtonTypeRoundedRect
+    appButton.frame = CGRectMake(79,94,170,44);
+    [appButton addTarget:self action:@selector(launchAppPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [appButton setTitle:@"TEST BUTTON" forState:UIControlStateNormal];
+    [appButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [appButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
+    appButton.titleLabel.font = segoeFont;
+    //appButton.titleLabel.textColor = [UIColor blackColor];
+    [self.view addSubview:appButton];
+    
+    //fiorito button
+    UIButton *fioritoButton =[UIButton buttonWithType:UIButtonTypeCustom];
+    fioritoButton.frame = CGRectMake(79,153,170,44);
+    [fioritoButton addTarget:self action:@selector(launchFioritoAttractor:) forControlEvents:UIControlEventTouchUpInside];
+    [fioritoButton setTitle:@"FIORITO" forState:UIControlStateNormal];
+    [fioritoButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [fioritoButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
+    fioritoButton.titleLabel.font = segoeFont;
+    [self.view addSubview:fioritoButton];
+    
+    //cloudButton
+    UIButton *cloudButton =[UIButton buttonWithType:UIButtonTypeCustom];
+    cloudButton.frame = CGRectMake(79,213,170,44);
+    [cloudButton addTarget:self action:@selector(launchCloudView:) forControlEvents:UIControlEventTouchUpInside];
+    [cloudButton setTitle:@"BUBBLE" forState:UIControlStateNormal];
+    [cloudButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [cloudButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
+    cloudButton.titleLabel.font = segoeFont;
+    [self.view addSubview:cloudButton];
+    
+    //boxButton
+    UIButton *boxButton =[UIButton buttonWithType:UIButtonTypeCustom];
+    boxButton.frame = CGRectMake(79,276,170,44);
+    [boxButton addTarget:self action:@selector(launchBoxesApp:) forControlEvents:UIControlEventTouchUpInside];
+    [boxButton setTitle:@"BOXES" forState:UIControlStateNormal];
+    [boxButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [boxButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
+    boxButton.titleLabel.font = segoeFont;
+    [self.view addSubview:boxButton];
+    
+    
+    /////////////////////////////////
+    //socketButton
+    UIButton *socketButton =[UIButton buttonWithType:UIButtonTypeCustom];
+    socketButton.frame = CGRectMake(288,96,170,44);
+    [socketButton addTarget:self action:@selector(launchSocketTest:) forControlEvents:UIControlEventTouchUpInside];
+    [socketButton setTitle:@"SOCKET ME" forState:UIControlStateNormal];
+    [socketButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [socketButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
+    socketButton.titleLabel.font = segoeFont;
+    [self.view addSubview:socketButton];
+    
+    
+    //vimeoButton
+    UIButton *vimeoButton =[UIButton buttonWithType:UIButtonTypeCustom];
+    vimeoButton.frame = CGRectMake(288,161,170,44);
+    [vimeoButton addTarget:self action:@selector(launchVimeoView:) forControlEvents:UIControlEventTouchUpInside];
+    [vimeoButton setTitle:@"VIMEO ME" forState:UIControlStateNormal];
+    [vimeoButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [vimeoButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
+    vimeoButton.titleLabel.font = segoeFont;
+    [self.view addSubview:vimeoButton];
+    
+    //jsonButton
+    UIButton *jsonButton =[UIButton buttonWithType:UIButtonTypeCustom];
+    jsonButton.frame = CGRectMake(288,217,170,44);
+    [jsonButton addTarget:self action:@selector(launchYouTubeJSONView:) forControlEvents:UIControlEventTouchUpInside];
+    [jsonButton setTitle:@"JSON ME" forState:UIControlStateNormal];
+    [jsonButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [jsonButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
+    jsonButton.titleLabel.font = segoeFont;
+    [self.view addSubview:jsonButton];
+    
+    //youtubeButton
+    UIButton *youtubeButton =[UIButton buttonWithType:UIButtonTypeCustom];
+    youtubeButton.frame = CGRectMake(288,278,170,44);
+    [youtubeButton addTarget:self action:@selector(launchYouTubeView:) forControlEvents:UIControlEventTouchUpInside];
+    [youtubeButton setTitle:@"YOUTUBE ME" forState:UIControlStateNormal];
+    [youtubeButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [youtubeButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
+    youtubeButton.titleLabel.font = segoeFont;
+    [self.view addSubview:youtubeButton];
+    
+    //imageLoaderButton
+    UIButton *imageLoaderButton =[UIButton buttonWithType:UIButtonTypeCustom];
+    imageLoaderButton.frame = CGRectMake(288,338,170,44);
+    [imageLoaderButton addTarget:self action:@selector(launchImageLoader:) forControlEvents:UIControlEventTouchUpInside];
+    [imageLoaderButton setTitle:@"IMAGE ME" forState:UIControlStateNormal];
+    [imageLoaderButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [imageLoaderButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
+    imageLoaderButton.titleLabel.font = segoeFont;
+    [self.view addSubview:imageLoaderButton];
+    
+    //activityButton
+    UIButton *activityButton =[UIButton buttonWithType:UIButtonTypeCustom];
+    activityButton.frame = CGRectMake(288,399,170,44);
+    [activityButton addTarget:self action:@selector(launchActivityTest:) forControlEvents:UIControlEventTouchUpInside];
+    [activityButton setTitle:@"ACTIVATE ME" forState:UIControlStateNormal];
+    [activityButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [activityButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
+    activityButton.titleLabel.font = segoeFont;
+    [self.view addSubview:activityButton];
 }
 
 - (void)didReceiveMemoryWarning

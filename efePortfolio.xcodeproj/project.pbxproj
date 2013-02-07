@@ -45,6 +45,8 @@
 		BD1DFB4616C3AF3B004D86F9 /* ModalTemplateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1DFB4416C3AF3A004D86F9 /* ModalTemplateViewController.xib */; };
 		BD1DFB4A16C3B197004D86F9 /* backgroundViews@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD1DFB4816C3B197004D86F9 /* backgroundViews@2x.png */; };
 		BD1DFB4B16C3B197004D86F9 /* backgroundViews.png in Resources */ = {isa = PBXBuildFile; fileRef = BD1DFB4916C3B197004D86F9 /* backgroundViews.png */; };
+		BD1DFB4D16C3CE10004D86F9 /* GillSans.ttc in Resources */ = {isa = PBXBuildFile; fileRef = BD1DFB4C16C3CE10004D86F9 /* GillSans.ttc */; };
+		BD1DFB4F16C3CE93004D86F9 /* Trebuchet MS.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD1DFB4E16C3CE93004D86F9 /* Trebuchet MS.ttf */; };
 		BD4FC28316B1718900EB70BD /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC28216B1718900EB70BD /* iPadStoryboard.storyboard */; };
 		BD4FC2B816B17AC100EB70BD /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC2B716B17AC100EB70BD /* splash.png */; };
 		BD4FC2BA16B17AD100EB70BD /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC2B916B17AD100EB70BD /* Default-Portrait@2x~ipad.png */; };
@@ -190,6 +192,8 @@
 		BD1DFB4416C3AF3A004D86F9 /* ModalTemplateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalTemplateViewController.xib; sourceTree = "<group>"; };
 		BD1DFB4816C3B197004D86F9 /* backgroundViews@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backgroundViews@2x.png"; sourceTree = "<group>"; };
 		BD1DFB4916C3B197004D86F9 /* backgroundViews.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundViews.png; sourceTree = "<group>"; };
+		BD1DFB4C16C3CE10004D86F9 /* GillSans.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = GillSans.ttc; sourceTree = "<group>"; };
+		BD1DFB4E16C3CE93004D86F9 /* Trebuchet MS.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Trebuchet MS.ttf"; sourceTree = "<group>"; };
 		BD4FC28216B1718900EB70BD /* iPadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPadStoryboard.storyboard; sourceTree = "<group>"; };
 		BD4FC2B716B17AC100EB70BD /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 		BD4FC2B916B17AD100EB70BD /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
@@ -511,6 +515,8 @@
 		BD1DFB3216C39B27004D86F9 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
+				BD1DFB4E16C3CE93004D86F9 /* Trebuchet MS.ttf */,
+				BD1DFB4C16C3CE10004D86F9 /* GillSans.ttc */,
 				BD1DFB3416C39F20004D86F9 /* Segoe UI.ttf */,
 			);
 			name = fonts;
@@ -876,6 +882,8 @@
 				BD1DFB4616C3AF3B004D86F9 /* ModalTemplateViewController.xib in Resources */,
 				BD1DFB4A16C3B197004D86F9 /* backgroundViews@2x.png in Resources */,
 				BD1DFB4B16C3B197004D86F9 /* backgroundViews.png in Resources */,
+				BD1DFB4D16C3CE10004D86F9 /* GillSans.ttc in Resources */,
+				BD1DFB4F16C3CE93004D86F9 /* Trebuchet MS.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
