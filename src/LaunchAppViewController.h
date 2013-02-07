@@ -33,5 +33,7 @@
 //ActivityTestViewController
 //-(IBAction)launchActivityTest:(id)sender;
 
+-(IBAction)launchScrollGallery:(id)sender;
+
 
 @end

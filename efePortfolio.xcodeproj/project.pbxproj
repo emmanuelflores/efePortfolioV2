@@ -53,6 +53,9 @@
 		BD1DFB5916C3E8FA004D86F9 /* AsyncImageLoaderTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1DFB5716C3E8FA004D86F9 /* AsyncImageLoaderTestViewController.xib */; };
 		BD1DFB5D16C3EA83004D86F9 /* PhotoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1DFB5B16C3EA83004D86F9 /* PhotoDetailViewController.m */; };
 		BD1DFB5E16C3EA83004D86F9 /* PhotoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1DFB5C16C3EA83004D86F9 /* PhotoDetailViewController.xib */; };
+		BD1DFB6316C40207004D86F9 /* ScrollGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1DFB6116C40207004D86F9 /* ScrollGalleryViewController.m */; };
+		BD1DFB6416C40207004D86F9 /* ScrollGalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1DFB6216C40207004D86F9 /* ScrollGalleryViewController.xib */; };
+		BD1DFB6716C40263004D86F9 /* ScrollGalleryView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1DFB6616C40263004D86F9 /* ScrollGalleryView.m */; };
 		BD4FC28316B1718900EB70BD /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC28216B1718900EB70BD /* iPadStoryboard.storyboard */; };
 		BD4FC2B816B17AC100EB70BD /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC2B716B17AC100EB70BD /* splash.png */; };
 		BD4FC2BA16B17AD100EB70BD /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC2B916B17AD100EB70BD /* Default-Portrait@2x~ipad.png */; };
@@ -209,6 +212,11 @@
 		BD1DFB5A16C3EA82004D86F9 /* PhotoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoDetailViewController.h; sourceTree = "<group>"; };
 		BD1DFB5B16C3EA83004D86F9 /* PhotoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoDetailViewController.m; sourceTree = "<group>"; };
 		BD1DFB5C16C3EA83004D86F9 /* PhotoDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoDetailViewController.xib; sourceTree = "<group>"; };
+		BD1DFB6016C40207004D86F9 /* ScrollGalleryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollGalleryViewController.h; sourceTree = "<group>"; };
+		BD1DFB6116C40207004D86F9 /* ScrollGalleryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollGalleryViewController.m; sourceTree = "<group>"; };
+		BD1DFB6216C40207004D86F9 /* ScrollGalleryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScrollGalleryViewController.xib; sourceTree = "<group>"; };
+		BD1DFB6516C40263004D86F9 /* ScrollGalleryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollGalleryView.h; sourceTree = "<group>"; };
+		BD1DFB6616C40263004D86F9 /* ScrollGalleryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollGalleryView.m; sourceTree = "<group>"; };
 		BD4FC28216B1718900EB70BD /* iPadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPadStoryboard.storyboard; sourceTree = "<group>"; };
 		BD4FC2B716B17AC100EB70BD /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 		BD4FC2B916B17AD100EB70BD /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
@@ -578,6 +586,18 @@
 			name = backgrounds;
 			sourceTree = "<group>";
 		};
+		BD1DFB5F16C400D4004D86F9 /* scrollView */ = {
+			isa = PBXGroup;
+			children = (
+				BD1DFB6016C40207004D86F9 /* ScrollGalleryViewController.h */,
+				BD1DFB6116C40207004D86F9 /* ScrollGalleryViewController.m */,
+				BD1DFB6216C40207004D86F9 /* ScrollGalleryViewController.xib */,
+				BD1DFB6516C40263004D86F9 /* ScrollGalleryView.h */,
+				BD1DFB6616C40263004D86F9 /* ScrollGalleryView.m */,
+			);
+			name = scrollView;
+			sourceTree = "<group>";
+		};
 		BD4FC28116B1716000EB70BD /* artwork-resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -774,6 +794,7 @@
 				BD1DFA6316C39155004D86F9 /* UIElements */,
 				E4DCA82E16B2B1B90011BE2A /* Data */,
 				BD4FC28416B175AB00EB70BD /* viewcontrollers */,
+				BD1DFB5F16C400D4004D86F9 /* scrollView */,
 				BD1DFB2416C39892004D86F9 /* imageLoader */,
 				BD667C6416B2CFF1005F959B /* webVideoPlayers */,
 				BD667C3916B2C43D005F959B /* webConnection */,
@@ -911,6 +932,7 @@
 				BD1DFB5416C3E882004D86F9 /* LoadImages.plist in Resources */,
 				BD1DFB5916C3E8FA004D86F9 /* AsyncImageLoaderTestViewController.xib in Resources */,
 				BD1DFB5E16C3EA83004D86F9 /* PhotoDetailViewController.xib in Resources */,
+				BD1DFB6416C40207004D86F9 /* ScrollGalleryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1006,6 +1028,8 @@
 				BD1DFB5216C3E7C0004D86F9 /* AsyncImageView.m in Sources */,
 				BD1DFB5816C3E8FA004D86F9 /* AsyncImageLoaderTestViewController.m in Sources */,
 				BD1DFB5D16C3EA83004D86F9 /* PhotoDetailViewController.m in Sources */,
+				BD1DFB6316C40207004D86F9 /* ScrollGalleryViewController.m in Sources */,
+				BD1DFB6716C40263004D86F9 /* ScrollGalleryView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

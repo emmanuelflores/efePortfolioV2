@@ -24,6 +24,7 @@
 #import "ImageCachedTestViewController.h"
 #import "AsyncImageLoaderTestViewController.h"
 #import "ActivityTestViewController.h"
+#import "ScrollGalleryViewController.h"
 
 #import "PrettyKit.h"
 #import "ModalTemplateViewController.h"
@@ -163,6 +164,12 @@
 -(IBAction)launchActivityTest:(id)sender{
     ActivityTestViewController *avc = [[ActivityTestViewController alloc]init];
     [self.navigationController pushViewController:avc animated:YES];
+}
+
+
+-(IBAction)launchScrollGallery:(id)sender{
+    ScrollGalleryViewController *svc = [[ScrollGalleryViewController alloc]init];
+    [self.navigationController pushViewController:svc animated:YES];
 }
 
 //////////////////////////////////////////////////
