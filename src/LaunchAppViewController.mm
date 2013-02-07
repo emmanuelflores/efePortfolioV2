@@ -377,6 +377,17 @@
     activityButton.titleLabel.font = segoeFont;
     [self.view addSubview:activityButton];
     
+    //scrollTestButton
+    UIButton *scrollTestButton =[UIButton buttonWithType:UIButtonTypeCustom];
+    scrollTestButton.frame = CGRectMake(288,500,250,44);
+    [scrollTestButton addTarget:self action:@selector(launchScrollGallery:) forControlEvents:UIControlEventTouchUpInside];
+    [scrollTestButton setTitle:@"SCROLL 1 OFFSET!" forState:UIControlStateNormal];
+    [scrollTestButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [scrollTestButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
+    scrollTestButton.titleLabel.font = segoeFont;
+    [self.view addSubview:scrollTestButton];
+    
+    
     
     /////////////////////////////////
     //portfolioButton

@@ -17,24 +17,9 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DuU-cz-ofw">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="scroll">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="launchScrollGallery:" destination="jpD-AE-jGV" eventType="touchUpInside" id="Vln-Kn-k5o"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="DuU-cz-ofw" secondAttribute="bottom" constant="103" id="PNr-aq-dSm"/>
-                            <constraint firstItem="DuU-cz-ofw" firstAttribute="leading" secondItem="Q3b-a8-BvY" secondAttribute="leading" constant="404" id="S5p-PX-weQ"/>
                             <constraint firstAttribute="trailing" secondItem="G0S-p6-dIg" secondAttribute="trailing" constant="177" id="qiN-KD-4VE"/>
                             <constraint firstItem="G0S-p6-dIg" firstAttribute="top" secondItem="Q3b-a8-BvY" secondAttribute="top" constant="94" id="vXj-P7-jms"/>
                         </constraints>
@@ -71,7 +56,19 @@
         <class className="LaunchAppViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LaunchAppViewController.h"/>
             <relationships>
+                <relationship kind="action" name="launchAbout:"/>
+                <relationship kind="action" name="launchActivityTest:"/>
+                <relationship kind="action" name="launchAppPressed:"/>
+                <relationship kind="action" name="launchAsyncImage:"/>
+                <relationship kind="action" name="launchBlog:"/>
+                <relationship kind="action" name="launchImageLoader:"/>
+                <relationship kind="action" name="launchInfo:"/>
+                <relationship kind="action" name="launchPortifolio:"/>
                 <relationship kind="action" name="launchScrollGallery:"/>
+                <relationship kind="action" name="launchSocketTest:"/>
+                <relationship kind="action" name="launchVimeoView:"/>
+                <relationship kind="action" name="launchYouTubeJSONView:"/>
+                <relationship kind="action" name="launchYouTubeView:"/>
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
