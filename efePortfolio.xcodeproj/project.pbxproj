@@ -47,6 +47,12 @@
 		BD1DFB4B16C3B197004D86F9 /* backgroundViews.png in Resources */ = {isa = PBXBuildFile; fileRef = BD1DFB4916C3B197004D86F9 /* backgroundViews.png */; };
 		BD1DFB4D16C3CE10004D86F9 /* GillSans.ttc in Resources */ = {isa = PBXBuildFile; fileRef = BD1DFB4C16C3CE10004D86F9 /* GillSans.ttc */; };
 		BD1DFB4F16C3CE93004D86F9 /* Trebuchet MS.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD1DFB4E16C3CE93004D86F9 /* Trebuchet MS.ttf */; };
+		BD1DFB5216C3E7C0004D86F9 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1DFB5116C3E7C0004D86F9 /* AsyncImageView.m */; };
+		BD1DFB5416C3E882004D86F9 /* LoadImages.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD1DFB5316C3E882004D86F9 /* LoadImages.plist */; };
+		BD1DFB5816C3E8FA004D86F9 /* AsyncImageLoaderTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1DFB5616C3E8FA004D86F9 /* AsyncImageLoaderTestViewController.m */; };
+		BD1DFB5916C3E8FA004D86F9 /* AsyncImageLoaderTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1DFB5716C3E8FA004D86F9 /* AsyncImageLoaderTestViewController.xib */; };
+		BD1DFB5D16C3EA83004D86F9 /* PhotoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1DFB5B16C3EA83004D86F9 /* PhotoDetailViewController.m */; };
+		BD1DFB5E16C3EA83004D86F9 /* PhotoDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1DFB5C16C3EA83004D86F9 /* PhotoDetailViewController.xib */; };
 		BD4FC28316B1718900EB70BD /* iPadStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC28216B1718900EB70BD /* iPadStoryboard.storyboard */; };
 		BD4FC2B816B17AC100EB70BD /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC2B716B17AC100EB70BD /* splash.png */; };
 		BD4FC2BA16B17AD100EB70BD /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BD4FC2B916B17AD100EB70BD /* Default-Portrait@2x~ipad.png */; };
@@ -194,6 +200,15 @@
 		BD1DFB4916C3B197004D86F9 /* backgroundViews.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundViews.png; sourceTree = "<group>"; };
 		BD1DFB4C16C3CE10004D86F9 /* GillSans.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = GillSans.ttc; sourceTree = "<group>"; };
 		BD1DFB4E16C3CE93004D86F9 /* Trebuchet MS.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Trebuchet MS.ttf"; sourceTree = "<group>"; };
+		BD1DFB5016C3E7C0004D86F9 /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
+		BD1DFB5116C3E7C0004D86F9 /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
+		BD1DFB5316C3E882004D86F9 /* LoadImages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LoadImages.plist; sourceTree = "<group>"; };
+		BD1DFB5516C3E8FA004D86F9 /* AsyncImageLoaderTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageLoaderTestViewController.h; sourceTree = "<group>"; };
+		BD1DFB5616C3E8FA004D86F9 /* AsyncImageLoaderTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageLoaderTestViewController.m; sourceTree = "<group>"; };
+		BD1DFB5716C3E8FA004D86F9 /* AsyncImageLoaderTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AsyncImageLoaderTestViewController.xib; sourceTree = "<group>"; };
+		BD1DFB5A16C3EA82004D86F9 /* PhotoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoDetailViewController.h; sourceTree = "<group>"; };
+		BD1DFB5B16C3EA83004D86F9 /* PhotoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoDetailViewController.m; sourceTree = "<group>"; };
+		BD1DFB5C16C3EA83004D86F9 /* PhotoDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoDetailViewController.xib; sourceTree = "<group>"; };
 		BD4FC28216B1718900EB70BD /* iPadStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPadStoryboard.storyboard; sourceTree = "<group>"; };
 		BD4FC2B716B17AC100EB70BD /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
 		BD4FC2B916B17AD100EB70BD /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
@@ -492,24 +507,33 @@
 		BD1DFB2416C39892004D86F9 /* imageLoader */ = {
 			isa = PBXGroup;
 			children = (
-				BD1DFB2C16C398D3004D86F9 /* test */,
+				BD1DFB2C16C398D3004D86F9 /* tests */,
 				BD1DFB2516C398B8004D86F9 /* URLImageCacheConstants.h */,
 				BD1DFB2616C398B8004D86F9 /* URLImageCached.h */,
 				BD1DFB2716C398B8004D86F9 /* URLImageCached.m */,
 				BD1DFB2816C398B8004D86F9 /* URLImageLoadOperation.h */,
 				BD1DFB2916C398B8004D86F9 /* URLImageLoadOperation.m */,
+				BD1DFB5016C3E7C0004D86F9 /* AsyncImageView.h */,
+				BD1DFB5116C3E7C0004D86F9 /* AsyncImageView.m */,
 			);
 			name = imageLoader;
 			sourceTree = "<group>";
 		};
-		BD1DFB2C16C398D3004D86F9 /* test */ = {
+		BD1DFB2C16C398D3004D86F9 /* tests */ = {
 			isa = PBXGroup;
 			children = (
 				BD1DFB2D16C398ED004D86F9 /* ImageCachedTestViewController.h */,
 				BD1DFB2E16C398ED004D86F9 /* ImageCachedTestViewController.m */,
 				BD1DFB2F16C398ED004D86F9 /* ImageCachedTestViewController.xib */,
+				BD1DFB5316C3E882004D86F9 /* LoadImages.plist */,
+				BD1DFB5516C3E8FA004D86F9 /* AsyncImageLoaderTestViewController.h */,
+				BD1DFB5616C3E8FA004D86F9 /* AsyncImageLoaderTestViewController.m */,
+				BD1DFB5716C3E8FA004D86F9 /* AsyncImageLoaderTestViewController.xib */,
+				BD1DFB5A16C3EA82004D86F9 /* PhotoDetailViewController.h */,
+				BD1DFB5B16C3EA83004D86F9 /* PhotoDetailViewController.m */,
+				BD1DFB5C16C3EA83004D86F9 /* PhotoDetailViewController.xib */,
 			);
-			name = test;
+			name = tests;
 			sourceTree = "<group>";
 		};
 		BD1DFB3216C39B27004D86F9 /* fonts */ = {
@@ -884,6 +908,9 @@
 				BD1DFB4B16C3B197004D86F9 /* backgroundViews.png in Resources */,
 				BD1DFB4D16C3CE10004D86F9 /* GillSans.ttc in Resources */,
 				BD1DFB4F16C3CE93004D86F9 /* Trebuchet MS.ttf in Resources */,
+				BD1DFB5416C3E882004D86F9 /* LoadImages.plist in Resources */,
+				BD1DFB5916C3E8FA004D86F9 /* AsyncImageLoaderTestViewController.xib in Resources */,
+				BD1DFB5E16C3EA83004D86F9 /* PhotoDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -976,6 +1003,9 @@
 				BD1DFB3B16C3A4E8004D86F9 /* DejalActivityView.m in Sources */,
 				BD1DFB3F16C3A626004D86F9 /* ActivityTestViewController.m in Sources */,
 				BD1DFB4516C3AF3B004D86F9 /* ModalTemplateViewController.m in Sources */,
+				BD1DFB5216C3E7C0004D86F9 /* AsyncImageView.m in Sources */,
+				BD1DFB5816C3E8FA004D86F9 /* AsyncImageLoaderTestViewController.m in Sources */,
+				BD1DFB5D16C3EA83004D86F9 /* PhotoDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

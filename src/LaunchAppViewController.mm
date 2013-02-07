@@ -22,6 +22,7 @@
 #import "YouTubeJSONViewController.h"
 #import "YouTubeViewController.h"
 #import "ImageCachedTestViewController.h"
+#import "AsyncImageLoaderTestViewController.h"
 #import "ActivityTestViewController.h"
 
 #import "PrettyKit.h"
@@ -99,6 +100,18 @@
     [self.navigationController pushViewController:portifolioVC animated:YES];
 }
 
+-(IBAction)launchBlog:(id)sender{
+    
+}
+
+-(IBAction)launchAbout:(id)sender{
+    
+}
+
+-(IBAction)launchInfo:(id)sender{
+    
+}
+
 -(IBAction)launchSocketTest:(id)sender{
     ReachabilityTestViewController *rtvc = [[ReachabilityTestViewController alloc]init];
     [self.navigationController pushViewController:rtvc animated:YES];
@@ -139,6 +152,11 @@
 -(IBAction)launchImageLoader:(id)sender{
     //CHECK THE PUSHING OF THE VIEW
     ImageCachedTestViewController *ivc = [[ImageCachedTestViewController alloc]init];
+    [self.navigationController pushViewController:ivc animated:YES];
+}
+
+-(IBAction)launchAsyncImage:(id)sender{
+    AsyncImageLoaderTestViewController *ivc = [[AsyncImageLoaderTestViewController alloc]init];
     [self.navigationController pushViewController:ivc animated:YES];
 }
 
@@ -332,15 +350,68 @@
     imageLoaderButton.titleLabel.font = segoeFont;
     [self.view addSubview:imageLoaderButton];
     
+    //asyncImageButton
+    UIButton *asyncImageButton =[UIButton buttonWithType:UIButtonTypeCustom];
+    asyncImageButton.frame = CGRectMake(288,399,170,44);
+    [asyncImageButton addTarget:self action:@selector(launchAsyncImage:) forControlEvents:UIControlEventTouchUpInside];
+    [asyncImageButton setTitle:@"ASYNC IMAGE" forState:UIControlStateNormal];
+    [asyncImageButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [asyncImageButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
+    asyncImageButton.titleLabel.font = segoeFont;
+    [self.view addSubview:asyncImageButton];
+    
     //activityButton
     UIButton *activityButton =[UIButton buttonWithType:UIButtonTypeCustom];
-    activityButton.frame = CGRectMake(288,399,170,44);
+    activityButton.frame = CGRectMake(288,450,170,44);
     [activityButton addTarget:self action:@selector(launchActivityTest:) forControlEvents:UIControlEventTouchUpInside];
     [activityButton setTitle:@"ACTIVATE ME" forState:UIControlStateNormal];
     [activityButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [activityButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
     activityButton.titleLabel.font = segoeFont;
     [self.view addSubview:activityButton];
+    
+    
+    /////////////////////////////////
+    //portfolioButton
+    UIButton *portfolioButton =[UIButton buttonWithType:UIButtonTypeCustom];
+    portfolioButton.frame = CGRectMake(661,132,170,44);
+    [portfolioButton addTarget:self action:@selector(launchPortifolio:) forControlEvents:UIControlEventTouchUpInside];
+    [portfolioButton setTitle:@"PORTFOLIO" forState:UIControlStateNormal];
+    [portfolioButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [portfolioButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
+    portfolioButton.titleLabel.font = segoeFont;
+    [self.view addSubview:portfolioButton];
+    
+    //blogButton
+    UIButton *blogButton =[UIButton buttonWithType:UIButtonTypeCustom];
+    blogButton.frame = CGRectMake(661,191,170,44);
+    [blogButton addTarget:self action:@selector(launchBlog:) forControlEvents:UIControlEventTouchUpInside];
+    [blogButton setTitle:@"BLOG" forState:UIControlStateNormal];
+    [blogButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [blogButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
+    blogButton.titleLabel.font = segoeFont;
+    [self.view addSubview:blogButton];
+    
+    
+    //aboutButton
+    UIButton *aboutButton =[UIButton buttonWithType:UIButtonTypeCustom];
+    aboutButton.frame = CGRectMake(661,255,170,44);
+    [aboutButton addTarget:self action:@selector(launchAbout:) forControlEvents:UIControlEventTouchUpInside];
+    [aboutButton setTitle:@"ABOUT" forState:UIControlStateNormal];
+    [aboutButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [aboutButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
+    aboutButton.titleLabel.font = segoeFont;
+    [self.view addSubview:aboutButton];
+    
+    //infoButton
+    UIButton *infoButton =[UIButton buttonWithType:UIButtonTypeCustom];
+    infoButton.frame = CGRectMake(661,320,170,44);
+    [infoButton addTarget:self action:@selector(launchInfo:) forControlEvents:UIControlEventTouchUpInside];
+    [infoButton setTitle:@"INFO" forState:UIControlStateNormal];
+    [infoButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [infoButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
+    infoButton.titleLabel.font = segoeFont;
+    [self.view addSubview:infoButton];
 }
 
 - (void)didReceiveMemoryWarning
