@@ -22,10 +22,7 @@
 -(void)viewDidLoad {
     [super viewDidLoad];
     
-    // This is just a demonstration of how you would extract
-    // a video URL using block-based syntax. It has no function
-    // in the demo app, other than it logs the extracted URL
-    // to the console, as you can see here:
+    //extract the URL
     
     LBYouTubeExtractor *extractor = [[LBYouTubeExtractor alloc] initWithURL:[NSURL URLWithString:@"http://www.youtube.com/watch?v=WVTzEq53-PI"] quality:LBYouTubeVideoQualityLarge];
     
