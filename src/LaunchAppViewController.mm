@@ -173,6 +173,9 @@
 
 }
 
+
+
+//////////////////////////////////////////////////
 #pragma mark - Life Cycle
 
 -(id)init{
@@ -197,11 +200,36 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    //customize navigation bar et al
+    PrettyNavigationBar *navBar = (PrettyNavigationBar *)self.navigationController.navigationBar;
+    
+    //Color Codes
+    //http://www.nthelp.com/colorcodes.htm
+    
+      //navBar.topLineColor = [UIColor colorWithHex:0x3399CC];
+//    navBar.gradientStartColor = [UIColor colorWithHex:0xDD0000];
+//    navBar.gradientEndColor = [UIColor colorWithHex:0xAA0000];
+      //navBar.bottomLineColor = [UIColor colorWithHex:0x000000];
+    /*
+     #define default_shadow_opacity 0.5
+     #define default_gradient_end_color      [UIColor colorWithHex:0x297CB7]
+     #define default_gradient_start_color    [UIColor colorWithHex:0x53A4DE]
+     #define default_top_line_color          [UIColor colorWithHex:0x84B7D5]
+     #define default_bottom_line_color       [UIColor colorWithHex:0x186399]
+     #define default_tint_color              [UIColor colorWithHex:0x3D89BF]
+     #define default_roundedcorner_color     [UIColor blackColor]
+     */
+    navBar.tintColor = navBar.gradientEndColor;
+    navBar.roundedCornerRadius = 2;
+    navBar.shadowOpacity = 0.2;
+    
     self.navigationItem.title = @"Style Test";
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]
                                               initWithBarButtonSystemItem:UIBarButtonSystemItemCompose
                                               target:self
                                               action:@selector(pkClick:)];
+    
 }
 
 - (void)didReceiveMemoryWarning
