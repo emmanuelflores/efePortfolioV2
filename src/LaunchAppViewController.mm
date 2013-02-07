@@ -14,6 +14,7 @@
 #import "YouTubeJSONViewController.h"
 #import "YouTubeViewController.h"
 #import "ImageCachedTestViewController.h"
+#import "ActivityTestViewController.h"
 
 @interface LaunchAppViewController () {}
 
@@ -124,6 +125,11 @@
 -(IBAction)launchImageLoader:(id)sender{
     ImageCachedTestViewController *ivc = [[ImageCachedTestViewController alloc]init];
     [self.navigationController pushViewController:ivc animated:YES];
+}
+
+-(IBAction)launchActivityTest:(id)sender{
+    ActivityTestViewController *avc = [[ActivityTestViewController alloc]init];
+    [self.navigationController pushViewController:avc animated:YES];
 }
 
 //////////////////////////////////////////////////

@@ -101,6 +101,7 @@
 
 - (void) setActionBlock:(void (^)(NSIndexPath *indexPath, int sselectedIndex))actionBlock {
     [super setActionBlock:^(NSIndexPath *indexPath, int sselectedIndex) {
+        //NOTICE HERE!!!!
         [self _setSelectedIndex:sselectedIndex notifySuper:NO];
         
         if (actionBlock)

@@ -22,6 +22,8 @@
 -(IBAction)launchYouTubeView:(id)sender;
 //image loader test
 -(IBAction)launchImageLoader:(id)sender;
+//ActivityTestViewController
+-(IBAction)launchActivityTest:(id)sender;
 
 
 @end
